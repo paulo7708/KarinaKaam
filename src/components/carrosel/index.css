@@ -1,0 +1,105 @@
+.carousel {
+  box-shadow: 10px 20px 50px -35px black;
+}
+
+.carousel .carousel-item {
+  height: 700px;
+
+  @media (min-width: 1441px) {
+    height: 780px;
+  }
+
+  @media (max-width: 800px) {
+    height: 500px;
+  }
+}
+
+.carousel-item img{
+    position: absolute;
+    object-fit: cover;
+    object-position:  10% 90%;
+    top: 0;
+    left: 0;
+    height: 700px;
+
+    @media (min-width: 1441px) {
+      height: 780px;
+    }
+}
+
+.carousel-item video {
+  position: absolute;
+  object-fit: cover;
+  object-position:  10% 90%;
+  top: 0;
+  left: 0;
+  height: 700px;
+
+  @media (min-width: 1441px) {
+    height: 780px;
+  }
+  @media (max-width: 800px) {
+    height: 500px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.carText h3, p {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.desfoque {
+  text-shadow: -2px 1px 2px black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:0.5rem;
+
+  @media (min-width: 1441px) {
+    margin-left: 50rem;
+    padding-bottom:16rem;
+  }
+
+  @media (max-width: 1441px) {
+    margin-left: 45rem;
+    padding-bottom:15rem;
+  }
+
+  @media (max-width: 1200px) {
+    margin: 0;
+    padding: 0;
+    gap:0;
+    btn{
+      display: none;
+    }
+  }
+}
+
+.btn {
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 1px 1px 4px black;
+  gap: 0.5rem;
+  width: 12rem;
+  height: 3rem;
+  border: 2px solid white;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  font-size:1.3rem;
+  background-color: #transparent;
+  opacity: 0.9;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  border: 3px solid white;
+}
+
