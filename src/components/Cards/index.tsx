@@ -3,15 +3,15 @@ import Fade from 'react-reveal/Fade'
 
 interface First {
   id?: string,
-  img: string,
+  img?: string,
   h2?: string,
-  p: string,
-  img2: string,
-  h22: string,
-  p2: string,
-  img3: string,
-  h23: string,
-  p3: string,
+  p?: string,
+  img2?: string,
+  h22?: string,
+  p2?: string,
+  img3?: string,
+  h23?: string,
+  p3?: string,
 }
 
 export const Cards = ({ img, h2, p, img2, h22, p2, img3, h23, p3, id }: First) => {
