@@ -3,24 +3,24 @@ import bgImg from '../../assets/backgroundFull.png'
 
 export const Contact = styled.section`
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 8rem;
-  height: 110vh;
+  gap: 5rem;
   padding-top: 8rem;
 
   background-image: url(${bgImg});
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
-
+  
   
   @media (max-width: 1072px) {
     background-position-x: right;
-    div {
-      display: none;
+    @media (max-width: 1072px) {
+    padding-top: 18rem;
     }
     
     section {
@@ -67,18 +67,29 @@ export const Contact = styled.section`
   }
   
 `
+export const HeaderForm = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  h1, h3, p {
+    color: #000;
+  }
+  
+`
 export const FormContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;  
   margin: 1rem 0;
-  background-color: #fff;
-  background-color: white;
+  background-color: transparent;
+  width: 100%;
+  gap: 1rem;
+  
 
   border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
 
   @media (max-width: 2560px) {
     padding: 2rem;
@@ -106,21 +117,21 @@ export const FormContainer = styled.section`
 
   form {
     max-width: 600px;
-    width: 25rem;
+    width: 40rem;
     display: flex;
     flex-direction: column;
     
   }
 
   label {
-    margin-bottom: 0.125rem;
+    margin-bottom: 0.5rem;
     color: ${props => props.theme["white"]};
   }
 
   input { 
     margin-bottom: 14px;
     height: 34px;
-    border: 1px solid ${props => props.theme["gray-400"]};
+    border: none; 
     border-radius: 8px;
     padding: 0 8px;
   }
@@ -129,6 +140,7 @@ export const FormContainer = styled.section`
     margin-bottom: 14px;
     height: 34px;
     border-radius: 8px;
+    border: none; 
     padding: 0 8px;
     color: ${props => props.theme["gray-400"]};
   }
@@ -137,7 +149,7 @@ export const FormContainer = styled.section`
     margin-bottom: 14px;
     border-radius: 8px;
     padding: 8px;
-    height: 94px;
+    height: 40px;
     resize: none;
     border: 1px solid ${props => props.theme["gray-400"]};
   }

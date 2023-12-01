@@ -1,6 +1,6 @@
 import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
-import { Contact, FormContainer } from './style.ts'
+import { Contact, FormContainer, HeaderForm } from './style.ts'
 import { WhatsappLogo } from "phosphor-react";
 
 export const Form = () => {
@@ -9,6 +9,9 @@ export const Form = () => {
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
+  const [quest1, setQuest1] = useState("");
+  const [quest2, setQuest2] = useState("");
+  const [quest3, setQuest3] = useState("");
 
   async function sendEmail(event: FormEvent) {
     event?.preventDefault();
@@ -19,6 +22,9 @@ export const Form = () => {
       message,
       email,
       phone,
+      quest1,
+      quest2,
+      quest3
     };
 
     await emailjs
@@ -36,6 +42,9 @@ export const Form = () => {
           setMessage("");
           setPhone("");
           setEmail("");
+          setQuest1("");
+          setQuest2("");
+          setQuest3("");
         },
 
       ).catch((err) => {
@@ -46,19 +55,17 @@ export const Form = () => {
   return (
     <Contact>
 
-      <div>
-        {/*<img src={image} alt="" />*/}
-        <h1>Fale sobre seu negocio</h1>
-        <h3>Conte-nos sobre como podemos te ajudar, basta preencher o formulario.<br></br> <span> Fale com nossos especialistas</span>.</h3>
-        <a className='whatsNav' href="https://wa.me/5511920092283" target="_blank"><WhatsappLogo size={33} color="#ff9a3d" /></a>
-      </div>
+
 
       <FormContainer>
-        <h1>Contato</h1>
-
+        <HeaderForm>
+          <h1>Contato</h1>
+          <h3>FALE CONOSCO</h3>
+          <p>Preencha o formulário para falar conosco. Se preferir, entre em contato pelo WhatsApp ou E-mail.</p>
+        </HeaderForm>
         <form onSubmit={sendEmail}>
           <label htmlFor="fname">
-            Nome
+            Qual o seu nome ?
           </label>
           <input
             id="fname"
@@ -71,8 +78,10 @@ export const Form = () => {
             required
           />
 
+
+
           <label htmlFor="fselect">
-            Assunto
+            Aceita contato pelo WhatsApp?
           </label>
 
           <select
@@ -81,15 +90,15 @@ export const Form = () => {
             value={subject}
             onChange={(event) => setSubject(event.target.value)}
           >
-            <option value="Empresa">Empresa</option>
-            <option value="Cliente">Cliente</option>
+            <option value="Empresa">Sim</option>
+            <option value="Cliente">Apenas Email</option>
             {/* <option value="Transferencias e Pagamentos">
               Transferencias e Pagamentos
             </option> */}
           </select>
 
           <label className="label" htmlFor="femail">
-            Email
+            Qual o seu email ?
           </label>
           <input
             id="femail"
@@ -103,7 +112,7 @@ export const Form = () => {
           />
 
           <label className="label" htmlFor="fphone">
-            Telefone
+            Qual o seu telefone?
           </label>
           <input
             id="fphone"
@@ -118,12 +127,49 @@ export const Form = () => {
           />
 
           <label className="label" htmlFor="fmessage">
-            Mensagem
+            Quais são os ambientes serão planejados?
           </label>
-          <textarea
+          <input
             id="fmessage"
             name="message"
-            placeholder="Digite sua mensagem..."
+            placeholder="Sua resposta..."
+            autoComplete="off"
+            onChange={(event) => setMessage(event.target.value)}
+            value={message}
+            required
+          />
+
+          <label className="label" htmlFor="quest1">
+            Quais são suas necessidades para o Projeto?
+          </label>
+          <input
+            id="quest1"
+            name="quest1"
+            placeholder="Sua resposta..."
+            autoComplete="off"
+            onChange={(event) => setMessage(event.target.value)}
+            value={message}
+            required
+          />
+          <label className="label" htmlFor="quest2">
+            Tem algum item de valor sentimental para colocar no seu ambiente?
+          </label>
+          <input
+            id="quest2"
+            name="quest2"
+            placeholder="Sua resposta..."
+            autoComplete="off"
+            onChange={(event) => setMessage(event.target.value)}
+            value={message}
+            required
+          />
+          <label className="label" htmlFor="quest3">
+            Deseja reaproveitar algum objeto/móvel?
+          </label>
+          <input
+            id="quest3"
+            name="quest3"
+            placeholder="Sua resposta..."
             autoComplete="off"
             onChange={(event) => setMessage(event.target.value)}
             value={message}

@@ -6,7 +6,7 @@ export const PortStyle = styled.div`
   align-items: center;
   flex-direction: column;
   position: relative;
-  margin:10rem 0 5rem 0;
+  margin: 3rem 0 0 0;
   gap: 1rem;
 
   a{
@@ -19,16 +19,13 @@ export const PortStyle = styled.div`
 
 export const ContainerCard = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 2rem;
 `
 export const Card = styled.div`
   
   
-    display: flex;
+  display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
