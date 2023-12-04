@@ -20,7 +20,8 @@ import svg4 from '../../assets/svg/svg4.png'
 import svg5 from '../../assets/svg/svg5.png'
 import svg6 from '../../assets/svg/svg6.png'
 import { Cards } from '../Cards'
-import { CompPortfolio } from "./compPortfolio";
+import { CompPortfolio } from "../compPortfolio";
+import { Servicos } from "../servicos";
 
 
 
@@ -29,6 +30,7 @@ export const Content = () => {
     <>
       <CarroselBootstrap />
       <BodyContent>
+        <Servicos />
         <CompPortfolio />
         <ImgIcon id="quemsomos" />
 

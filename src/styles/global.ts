@@ -13,10 +13,14 @@ export const GlobalStyle = createGlobalStyle`
 
   :focus {
     outline: 0;
-    box-shadow: 0 0 0 2px ${(props) => props.theme["blue"]};
+    box-shadow: 0 0 0 2px ${(props) => props.theme["#fff"]};
   }
 
   body {
+
+  color: #d1cdc7;
+  background-color: #181a1b;
+  -webkit-tap-highlight-color: transparent;
     
   background-image: url(${abstrato});
   background-repeat: no-repeat;
@@ -35,11 +39,11 @@ export const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 2.7rem;
-    color: ${(props) => props.theme["primary"]}   
+    color: ${(props) => props.theme["kam-pink"]}   
   }
   h2 {
     font-size: 2rem;
-    color: ${(props) => props.theme["primary"]} 
+    color: ${(props) => props.theme["kam-pink"]} 
   }
   h3 {
     font-size: 1.8rem;

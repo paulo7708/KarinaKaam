@@ -1,4 +1,4 @@
-import svg1 from '../../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
+import svg1 from '../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
 import { Card, ContainerCard, PortBtn, PortStyle } from './style'
 
 export function CompPortfolio() {
@@ -30,7 +30,7 @@ export function CompPortfolio() {
 
         </ContainerCard>
         <PortBtn href="/portfolio">
-          Clique aqui para ver mais projetos
+          <p>Clique aqui para ver mais projetos</p>
         </PortBtn>
 
 

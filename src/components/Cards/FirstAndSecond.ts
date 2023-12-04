@@ -30,7 +30,8 @@ export const FirstStyle = styled.section`
     gap: 1rem;
 
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
-    background-color: ${props => props.theme['white']};
+    background-color: ${props => props.theme['gray-600']};
+    opacity: 70%;
 
 
     padding: 2rem;

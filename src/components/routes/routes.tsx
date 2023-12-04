@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import { Default } from "../../layouts/default/Default";
 import { Content } from "../content/Content";
 import { Form } from "../form";
-import Portfolio from "../content/portfolio";
+import Portfolio from "../portfolio";
 
 
 

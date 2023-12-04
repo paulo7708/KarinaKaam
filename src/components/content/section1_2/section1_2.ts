@@ -40,7 +40,7 @@ export const StyledSection = styled.div`
 
   img {
     object-position: top;
-    width: 50%;
+    width: 35%;
     object-fit: cover;
     border-radius: 10px ;
   }   
@@ -96,7 +96,6 @@ export const StyledSection = styled.div`
     h1{
       font-size: 2.3rem;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      color: ${props => props.theme["rb-blue"]};
       opacity: 0.9;
 
       @media (max-width: 800px) {

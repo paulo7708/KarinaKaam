@@ -28,11 +28,16 @@ export const VideoSection = styled.div`
   @media (min-width: 1300px) {
     height: 70vh;
   }
-    
+  video {
+    object-position: center;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+  }  
 
   img {
     object-position: top;
-    width: 50%;
+    width: 35%;
     object-fit: cover;
     border-radius: 0 20px 20px 0 ;
   }
@@ -55,10 +60,10 @@ export const VideoSection = styled.div`
     
     
     gap: 1rem;
-    max-width: 55%;
+    max-width: 65%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -35px;
     border-radius: 10px;
-    margin: 0 10rem;
+    margin: 0 5rem;
 
     @media (max-width: 800px) {
       
@@ -78,8 +83,7 @@ export const VideoSection = styled.div`
       
     }
 
-    h1{      
-      color: ${props => props.theme["rb-blue"]};
+    h1{ 
       opacity: 0.9;
       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
@@ -98,7 +102,6 @@ export const VideoSection = styled.div`
       }
     }
     span{
-      color: ${props => props.theme['blue-500']};
     }
     h3 {
       font-family: Eras;

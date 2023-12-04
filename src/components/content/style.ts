@@ -8,6 +8,12 @@ export const BodyContent = styled.section`
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  
+
+  width: 100%;
+  max-width: 1280px;
+  margin: 4rem auto 0;
+  padding: 0 1.5rem;
 
 `
 export const ImgIcon = styled.div`

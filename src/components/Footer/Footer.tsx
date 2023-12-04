@@ -32,23 +32,19 @@ export const Footer = () => {
             as={Link}
             to={"/#Home"}
           >
-            Início
+            Home
           </Nav.Link>
           <Nav.Link className='nav-links'
             as={Link}
-            to={"/#quemsomos"}>
-            Quem somos
+            to={"/#portfolio"}>Portfólio
           </Nav.Link>
           <Nav.Link className='nav-links'
             as={Link}
-            to={"/#relacionamento"}>Relacionamento
+            to={"/#servicos"}>Serviços
           </Nav.Link>
-
-
 
         </div>
         
-
         <div></div>
       </RowSection>
 
