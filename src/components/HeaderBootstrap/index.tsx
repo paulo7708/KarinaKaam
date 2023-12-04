@@ -44,20 +44,25 @@ export const HeaderBootstrap = () => {
                 as={Link}
                 to={"/#Home"}
                 >
-                Início
+                Home
               </Nav.Link>
 
               <Nav.Link eventKey="2" id='nav-links' className='ms-auto me-auto'
                 as={Link}
-                to={"/#quemsomos"}>Quem somos
+                to={"/#portfolio"}>Portfólio
               </Nav.Link>
 
               <Nav.Link eventKey="3" id='nav-links' className='ms-auto me-auto'
                 as={Link}
-                to={"/#relacionamento"}>Relacionamento
+                to={"/#servicos"}>Serviços
               </Nav.Link>
 
-              <Nav.Link eventKey="4" type="button" id='btn' className="nav-links ms-auto me-auto"
+              <Nav.Link eventKey="4" id='nav-links' className='ms-auto me-auto'
+                as={Link}
+                to={"/#sobre"}>Sobre
+              </Nav.Link>
+
+              <Nav.Link eventKey="5" type="button" id='btn' className="nav-links ms-auto me-auto"
                 as={Link}
                 to={"/faleconosco"}
               ><Users className='whatsNav' size={28} color={'#7C7C8A'} weight="fill"/>Atendimento

@@ -1,11 +1,11 @@
 import { Card, ContainerCard, PortStyle } from "./style";
-import svg1 from '../../../assets/svg/svg1.png'
+import svg1 from '../../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
 
 export default function Portfolio(){
   return(
     <PortStyle>
       <div>
-        <h1>Portfolio</h1>
+        <p>———&nbsp; SERVIÇOS&nbsp; ———</p>
       </div>
       <div>
         <h3>Clique nas imagens e veja os projetos:</h3>

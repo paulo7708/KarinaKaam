@@ -34,16 +34,20 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   h1 {
-    font-size: 2.7rem;    
+    font-size: 2.7rem;
+    color: ${(props) => props.theme["primary"]}   
   }
   h2 {
     font-size: 2rem;
+    color: ${(props) => props.theme["primary"]} 
   }
   h3 {
     font-size: 1.8rem;
+    color: ${(props) => props.theme["text"]} 
   }
   p {
     font-size: 1.3rem;
+    color: ${(props) => props.theme["text"]} 
   }
   
 

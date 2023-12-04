@@ -125,7 +125,7 @@ export const FormContainer = styled.section`
 
   label {
     margin-bottom: 0.5rem;
-    color: ${props => props.theme["white"]};
+    color: ${props => props.theme["#000"]};
   }
 
   input { 

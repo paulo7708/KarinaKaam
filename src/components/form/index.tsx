@@ -55,8 +55,6 @@ export const Form = () => {
   return (
     <Contact>
 
-
-
       <FormContainer>
         <HeaderForm>
           <h1>Contato</h1>

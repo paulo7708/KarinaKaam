@@ -9,7 +9,6 @@ export const BodyContent = styled.section`
   justify-content: space-evenly;
   align-items: center;
 
-
 `
 export const ImgIcon = styled.div`
   @media (min-width: 800px) {
