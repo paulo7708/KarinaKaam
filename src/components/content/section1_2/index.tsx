@@ -6,8 +6,8 @@ interface Section1_2 {
   id?: string,
   title?: string,
   subTitle?: string,
-  text: string,
-  btnText: string,
+  text?: string,
+  btnText?: string,
   img?: string,
 }
 

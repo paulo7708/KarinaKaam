@@ -1,34 +1,51 @@
 import svg1 from '../../assets/svg/svg1.png'
 import { Card, ContainerCard, PortStyle } from './style'
 
-export function Servicos() {
+interface Servicos {
+  id?: string,
+  title?: string,
+  subTitle?: string,
+  text?: string,
+  btnText?: string,
+  video?: string,
+  image?: string,
+  h2?: string,
+  p?: string,
+  card1?: string,
+  card2?: string,
+  card3?: string,
+  card4?: string,
+  strong?: string,
+}
+
+export function Servicos({ id, title, h2, p, card1, card2, card3, card4, strong} : Servicos) {
   return (
     <>
-      <PortStyle>
+      <PortStyle id={id}>
                 
-        <p className=' title'><span>———</span>&nbsp; SERVIÇOS &nbsp; <span>———</span></p>
-        <h2>QUANDO SOLICIDAR UM<br/> ESCRITORIO DE ARQUITETURA?</h2>
-        <p>Construir e reformar pode parecer simples, mas apenas quem já experimentou sabe que não é tão fácil assim. Lidar com fornecedores, adaptar e aprimorar o espaço, gerenciar custos e materiais podem ser desafios estressantes. Nossa missão é simplificar esse processo e tornar seu sonho uma realidade palpável.</p>
-        <strong>Se você se identifica com essas situações abaixo, nós podemos te ajudar:</strong>
+        <p className=' title'><span>———</span>&nbsp; {title} &nbsp; <span>———</span></p>
+        <h2>{h2}</h2>
+        <p>{p}</p>
+        <strong>{strong}</strong>
         <ContainerCard>
           <Card>
             <a href="">
-              <p>Quer personalizar o seu ambiente, mas está em dúvida por onde começar?</p>
+            <p>{card1}</p>
             </a>
           </Card>
           <Card>
             <a href="">
-              <p>Tem dificuldades em supervisionar a construção e os profissionais</p>
+            <p>{card2}</p>
             </a>
           </Card>
           <Card>
             <a href="">
-              <p>Deseja evitar desperdício de materiais e economizar tempo</p>
+              <p>{card3}</p>
             </a>
           </Card>
           <Card>
             <a href="">
-              <p>Deseja evitar desperdício de materiais e economizar tempo</p>
+              <p>{card4}</p>
             </a>
           </Card>
           

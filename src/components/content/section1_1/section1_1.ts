@@ -7,6 +7,7 @@ export const VideoSection = styled.div`
   display: flex;
   width: 100%;
   background-color: transparent;
+  padding-top: 4rem;
   
 
   @media (min-width: 1500px) {
@@ -14,13 +15,13 @@ export const VideoSection = styled.div`
 
     div {
       h1{
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       h3 {
         font-size: 2rem;
       }
       p{
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
   }

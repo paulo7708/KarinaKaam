@@ -15,19 +15,19 @@ export const StyledSection = styled.div`
 
     div {
       h1{
-          font-size: 3rem;
+          font-size: 2.5rem;
         }
       h3 {
         font-size: 2rem;
       }
       p{
-        font-size: 2rem;
+        font-size: 1.5rem;
       }
     }
   }
 
   @media (min-width: 1500px) {
-    padding: 0 10rem;
+    padding: 2rem 0;
     height: 60vh;
   }
 
