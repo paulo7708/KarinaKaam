@@ -7,6 +7,7 @@ export const PortStyle = styled.div`
   flex-direction: column;
   position: relative;
   gap: 1rem;
+  text-align: justify;
 
   /* config Rocket */
   width: 100%;
@@ -25,10 +26,22 @@ export const PortStyle = styled.div`
       color: ${(props) => props.theme["gray-300"]};
       font-weight: 600;
       text-shadow: 1px 0px 0px #4B4B4D;
+      text-align: justify;
   }
 
   .title{
-    font-size: 1.5rem;
+    padding: 2rem 0;
+    font-size:1.5rem;
+    border:none;
+    color:#E1E1E6;
+  }
+
+  span{
+    color:#E1E1E6;
+    font-size:1.5rem;
+    color: #E1E1E6;
+    font-weight: 600;
+    text-shadow: 1px 0px 0px #E1E1E6;
   }
 
   h2{
@@ -78,8 +91,12 @@ export const ContainerCard = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  flex-wrap: wrap;
   gap: 2rem;
+
+  @media(max-width:900px){
+    display: flex;
+    flex-direction: column;
+  }
 
   
 `
@@ -93,11 +110,17 @@ export const Card = styled.div`
     /* border: solid 2px black; */
     border-radius: 2px;
 
-    width: 258px;
-    height: 172px;
+    width: 25%;
     background-color: ${(props) => props.theme['gray-600']};
-    padding: 1rem;
+    padding: 1rem 2rem;
+    p {
+      text-align: center;
+    }
     
+    @media(max-width:900px){
+      width: 100%;
+      height: 100px;
+    }
 
     a{
       display: flex;

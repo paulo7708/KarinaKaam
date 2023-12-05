@@ -9,7 +9,7 @@ import image1 from '../../assets/1_3_1.png'
 import image2 from '../../assets/1_3_2.png'
 import image4 from '../../assets/1_3_4.png'
 import image5 from '../../assets/1_3_5.jpg'
-
+import Fac from '../accordion'
 
 import { Section1_1 } from "./section1_1";
 
@@ -22,6 +22,7 @@ import svg6 from '../../assets/svg/svg6.png'
 import { Cards } from '../Cards'
 import { CompPortfolio } from "../compPortfolio";
 import { Servicos } from "../servicos";
+import { CardSvg } from "../cardSvg";
 
 
 
@@ -30,8 +31,10 @@ export const Content = () => {
     <>
       <CarroselBootstrap />
       <BodyContent>
+        <Fac />
         <Servicos />
         <CompPortfolio />
+        <CardSvg />
         <ImgIcon id="quemsomos" />
 
         <Section1_1

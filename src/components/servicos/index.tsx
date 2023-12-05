@@ -5,24 +5,25 @@ export function Servicos() {
   return (
     <>
       <PortStyle>
-        <p className='title'>———&nbsp; SERVIÇOS &nbsp; ———</p>
+                
+        <p className=' title'><span>———</span>&nbsp; SERVIÇOS &nbsp; <span>———</span></p>
         <h2>QUANDO SOLICIDAR UM<br/> ESCRITORIO DE ARQUITETURA?</h2>
         <p>Construir e reformar pode parecer simples, mas apenas quem já experimentou sabe que não é tão fácil assim. Lidar com fornecedores, adaptar e aprimorar o espaço, gerenciar custos e materiais podem ser desafios estressantes. Nossa missão é simplificar esse processo e tornar seu sonho uma realidade palpável.</p>
         <strong>Se você se identifica com essas situações abaixo, nós podemos te ajudar:</strong>
         <ContainerCard>
           <Card>
             <a href="">
-              <p>Quer deixar seu espaço com a sua cara, mas não sabe o que fazer</p>
+              <p>Quer personalizar o seu ambiente, mas está em dúvida por onde começar?</p>
             </a>
           </Card>
           <Card>
             <a href="">
-              <p>Quer deixar seu espaço com a sua cara, mas não sabe o que fazer</p>
+              <p>Tem dificuldades em supervisionar a construção e os profissionais envolvidos</p>
             </a>
           </Card>
           <Card>
             <a href="">
-              <p>Quer deixar seu espaço com a sua cara, mas não sabe o que fazer</p>
+              <p>Deseja evitar desperdício de materiais e economizar tempo</p>
             </a>
           </Card>
           

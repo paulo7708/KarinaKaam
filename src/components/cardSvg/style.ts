@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const PortStyle = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   flex-direction: column;
   position: relative;
@@ -10,9 +10,11 @@ export const PortStyle = styled.div`
 
   /* config Rocket */
   width: 100%;
-  max-width: 1120px;
+  max-width: 1280px;
   margin: 4rem auto 0;
   padding: 0 1.5rem;
+
+  
 
   p {
       display: block;
@@ -32,6 +34,9 @@ export const PortStyle = styled.div`
     font-weight: 900;
     text-align: center;
   }
+  h3{
+    color: ${(props) => props.theme["gray-300"]};
+  }
 
   a{
     text-decoration: none;
@@ -39,13 +44,14 @@ export const PortStyle = styled.div`
     font-size: 2rem;
   }
 `
+
 export const PortBtn = styled.a`
   text-decoration: none;
     margin-top: 0.5rem;
     font-size: 2rem;
     border: 3px solid ${(props) => props.theme["gray-300"]};
     color: ${(props) => props.theme["gray-300"]};
-    padding: 0.8rem 5rem;
+    padding: 0.01rem 5rem;
     transition: 0.2s;
     @media (max-width: 800px){
       padding: 0.8rem 2rem;
@@ -77,6 +83,9 @@ export const ContainerCard = styled.div`
 `
 export const Card = styled.div`
   
+  @media (max-width: 1180px) {
+    width: 100%;
+  }
   
   display: flex;
     flex-direction: column;
@@ -84,7 +93,10 @@ export const Card = styled.div`
     align-items: center;
     /* border: solid 2px black; */
     border-radius: 2px;
-    
+    width: 40%;
+    p{
+      font-size: 1rem;
+    }
 
     a{
       display: flex;
@@ -94,7 +106,7 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
-        width: 258px;
+        width: 358px;
         height: 172px;
       }
 
@@ -104,13 +116,11 @@ export const Card = styled.div`
 
       
     }
-    .hiddenMob {
-      @media(max-width:900px){
-        
-        display: none;
-      }
+    
+    h1{
+      font-size: 2rem;
+      padding-top: 1rem;
     }
-  
 
   
 `

@@ -1,5 +1,5 @@
 import { Card, ContainerCard, PortStyle } from "./style";
-import svg1 from '../../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
+import svg1 from '../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
 
 export default function Portfolio(){
   return(
