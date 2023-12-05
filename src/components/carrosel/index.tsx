@@ -2,9 +2,9 @@ import { HashLink as Link } from 'react-router-hash-link';
 import Nav from 'react-bootstrap/Nav';
 import Carousel from 'react-bootstrap/Carousel';
 
-import car1 from '../../assets/back2.png'
-import car2 from '../../assets/carrosel/videoCarousel.mp4'
-import car3 from '../../assets/carrosel/Artboard-3_3.png'
+import car1 from '../../assets/carrosel/Artboard-3_1.jpg'
+import car2 from '../../assets/carrosel/Artboard-3_2.jpg'
+import car3 from '../../assets/carrosel/Artboard-3_3.jpg'
 import "./index.css"
 
 import Fade from 'react-reveal/Fade'
