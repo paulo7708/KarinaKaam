@@ -12,7 +12,7 @@ export const BodyContent = styled.section`
 
   width: 100%;
   max-width: 1280px;
-  margin: 4rem auto 0;
+  margin: 1rem auto 0;
   padding: 0 1.5rem;
 
 `

@@ -1,5 +1,5 @@
 import svg1 from '../../assets/svg/svg1.png'
-import { Card, ContainerCard, PortBtn, PortStyle } from './style'
+import { Card, ContainerCard, PortStyle } from './style'
 
 export function Servicos() {
   return (
@@ -18,7 +18,12 @@ export function Servicos() {
           </Card>
           <Card>
             <a href="">
-              <p>Tem dificuldades em supervisionar a construção e os profissionais envolvidos</p>
+              <p>Tem dificuldades em supervisionar a construção e os profissionais</p>
+            </a>
+          </Card>
+          <Card>
+            <a href="">
+              <p>Deseja evitar desperdício de materiais e economizar tempo</p>
             </a>
           </Card>
           <Card>

@@ -1,16 +1,32 @@
+
 .container{
   display:flex;
   flex-direction:column;
   justify-content:center;
   align-itens:center;
   width:1000px;
-
+  gap: 2rem;
   
 
   @media(max-width:999px){
     width:400px;
   }
 }
+
+.paddingTop{  
+  padding-bottom: 5rem;
+}
+
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+}
+
+#Trosa{
+  padding-bottom: 2rem;
+}
+
 
 .title{
   padding: 2rem 0;
