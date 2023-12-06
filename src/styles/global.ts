@@ -18,7 +18,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
 
-  color: #d1cdc7;
+  color: white;
   background-color: #181a1b;
   -webkit-tap-highlight-color: transparent;
     

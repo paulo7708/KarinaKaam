@@ -11,9 +11,13 @@ export const PortStyle = styled.div`
   /* config Rocket */
   width: 100%;
   max-width: 1120px;
-  margin: 4rem auto 0;
-  padding: 4rem 0;
-
+  margin: 1rem auto 0;
+  padding: 1rem 0;
+  @media (max-width: 800px) {
+    h2{
+      font-size: 1.3rem;
+    }
+  }
   p {
       display: block;
       margin-block-start: 1em;
@@ -46,7 +50,8 @@ export const PortBtn = styled.a`
     border: 3px solid ${(props) => props.theme["gray-300"]};
     color: ${(props) => props.theme["gray-300"]};
     padding: 0.5rem 4rem;
-    transition: 0.2s;
+    opacity: 0.9;
+      transition: all 0.2s ease-in-out;
     @media (max-width: 800px){
       padding: 0.8rem 2rem;
 
@@ -55,13 +60,15 @@ export const PortBtn = styled.a`
       };
     }
 
-    &:hover {
-      scale: 1.04;
+    &:hover { 
+          transform: scale(1.1);
       background-color: ${(props) => props.theme['kam-blue']};
       color:  ${(props) => props.theme['kam-pink']};
       border: 3px solid ${(props) => props.theme["kam-pink"]};
     }
 
+
+    
     
 `
 
@@ -94,7 +101,7 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
-        width: 258px;
+        width: 328px;
         height: 172px;
       }
 

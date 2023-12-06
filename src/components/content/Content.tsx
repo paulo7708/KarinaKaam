@@ -32,9 +32,9 @@ export const Content = () => {
       <CarroselBootstrap />
       <BodyContent>
 
-        <ImgIcon id="servicos" />
+        {/* <ImgIcon id="servicos" /> */}
         <Servicos
-          id=""
+          id="servicos"
           title="SERVIÇOS"
           h2="QUANDO SOLICIDAR UM ESCRITORIO DE ARQUITETURA?"
           p="Construir e reformar pode parecer simples, mas apenas quem já experimentou sabe que não é tão fácil assim. Lidar com fornecedores, adaptar e aprimorar o espaço, gerenciar custos e materiais podem ser desafios estressantes. Nossa missão é simplificar esse processo e tornar seu sonho uma realidade palpável."
@@ -44,6 +44,7 @@ export const Content = () => {
           card4="Deseja evitar desperdício de materiais e economizar tempo"
           strong="Se você se identifica com essas situações abaixo, nós podemos te ajudar:"
         />
+        <CompPortfolio />
         <ImgIcon id="sobre"/>
         <ImgIcon className="sobre">
           <h3> Quem somos &nbsp;</h3>
@@ -90,7 +91,6 @@ export const Content = () => {
           btnText="Fale conosco"
         />
 
-        <CompPortfolio />
         <CardSvg />
         <ImgIcon id="fac" />
         <Fac />

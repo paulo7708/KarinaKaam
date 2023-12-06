@@ -21,12 +21,19 @@ function CarroselBootstrap() {
         <Carousel.Caption className='desfoque carText'>
 
           <Fade top duration={2000} delay={500}>
-            <h3></h3>
-            <p>Recuperamos seu crédito por meio de uma Gestão de Carteira Humanizada.</p>
+            <h3>ARQUITETURA E DESIGN DE INTERIORES</h3>      
+
+            <p>Ajudando à transformar seus ambientes em espaços criativos, e funcionais de maneira pratica e eficiente.</p>
             <Nav.Link type="button" className="nav-links ms-auto me-auto btn"
               as={Link}
               to={"/faleconosco"}
-            >Saiba mais
+            >ARQUITETURA
+            </Nav.Link>
+
+            <Nav.Link type="button" className="nav-links ms-auto me-auto btn"
+              as={Link}
+              to={"/faleconosco"}
+            >DESIGN DE INTERIORES
             </Nav.Link>
           </Fade>
 

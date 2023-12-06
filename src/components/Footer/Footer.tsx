@@ -15,36 +15,7 @@ export const Footer = () => {
           </article>
           <span><Copyright size={20} weight="bold" />2023 Todos os direitos reservados</span>
         </div>
-        {/* <div>
-          <h1>Fale Conosco</h1>
-          <div>
-            <a href="https://wa.me/5511920092283" target="_blank"><p><PhoneCall size={32} weight="duotone" /> (14) xxxxx-xxxx
-            </p></a>
-            
-            <p><Envelope size={32} weight="duotone" />atendimento@xxxx.com.br</p>
-          </div>
-        </div> */}
-        {/* <div>
-          <h1>Serviços</h1>
-
-          <Nav.Link className='nav-links'
-            as={Link}
-            to={"/#Home"}
-          >
-            Home
-          </Nav.Link>
-          <Nav.Link className='nav-links'
-            as={Link}
-            to={"/#portfolio"}>Portfólio
-          </Nav.Link>
-          <Nav.Link className='nav-links'
-            as={Link}
-            to={"/#servicos"}>Serviços
-          </Nav.Link>
-
-        </div> */}
         
-        <div></div>
       </RowSection>
 
       

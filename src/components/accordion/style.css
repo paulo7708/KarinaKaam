@@ -21,10 +21,15 @@ h2{
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   text-align: center;
+  
 }
 
 #Trosa{
   padding-bottom: 2rem;
+
+  @media (max-width: 800px) {
+    font-size: 1.5rem;    
+  }
 }
 
 
@@ -33,6 +38,7 @@ h2{
   font-size:1.5rem;
   border:none;
   color:#E1E1E6;
+  text-align:center;
 }
 
 span{

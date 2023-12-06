@@ -37,7 +37,7 @@ export const RowSection = styled.section`
     gap: 1rem;
     color: ${props => props.theme["rb-blue"]};
 
-    article {
+    a {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -48,7 +48,7 @@ export const RowSection = styled.section`
       flex-direction: row;
       justify-content: center;
       align-items: center;
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
     p {      
       display: flex;
@@ -81,33 +81,3 @@ export const RowSection = styled.section`
   }
 `
 
-export const EndSection = styled.section`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 81%;
-  padding-top: 4rem;
-
-  @media (max-width: 1070px) {
-    display: none;
-  }
-
-  div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.3rem;
-    
-    
-
-    a{
-      text-decoration: none;
-      color: ${props => props.theme['rb-papaia']};
-      transition: all .2s ease-in-out; 
-
-      &:hover { 
-        transform: scale(1.3);      
-      }
-    }
-  }
-`

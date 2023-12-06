@@ -43,7 +43,7 @@ export const StyledSection = styled.div`
   @media (max-width: 800px) {
     display: flex;
     flex-direction: column-reverse;
-    padding: 0;
+    padding: 2rem 0;
     img {
       width: 100%;
       object-position: top;
@@ -71,7 +71,7 @@ export const StyledSection = styled.div`
       
     @media (max-width: 800px) {
       width: 100%;
-      padding: 1rem 0;
+      padding: 2rem 0;
       margin: 0;
 
       h1 {
@@ -81,7 +81,7 @@ export const StyledSection = styled.div`
         font-size: 1.2rem;
       }
       p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
       }
       
     }
@@ -123,9 +123,9 @@ export const StyledSection = styled.div`
       gap: 0.5rem;
       width: 12rem;
       height: 3rem;
-      border: 1px solid ${props => props.theme['rb-papaia2']};;
-      border-radius: 15px;
-      color: ${props => props.theme['rb-papaia']};;
+      border: 2px solid ${props => props.theme['gray-300']};;
+      border-radius: 5px;
+      color: ${props => props.theme['gray-300']};;
       font-weight: bold;
       font-size:1.1rem;
       background-color: transparent;
@@ -134,8 +134,9 @@ export const StyledSection = styled.div`
 
       &:hover { 
           transform: scale(1.1);
-          color: ${props => props.theme['rb-papaia']};     
-          border-color: ${props => props.theme['rb-papaia2']};     
+          color: ${props => props.theme['kam-pink']};     
+          border-color: ${props => props.theme['kam-pink']};
+          background-color: ${props => props.theme["kam-blue"]} ;
         }
 
         @media (max-width: 800px) {

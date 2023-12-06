@@ -88,7 +88,7 @@ export const VideoSection = styled.div`
         font-size: 1.2rem;
       }
       p {
-        font-size: 0.8rem;
+        font-size: 1.1rem;
       }
       
     }
@@ -134,9 +134,9 @@ export const VideoSection = styled.div`
       gap: 0.5rem;
       width: 12rem;
       height: 3rem;
-      border: 1px solid ${props => props.theme['rb-papaia2']};;      
-      color: ${props => props.theme['rb-papaia']};;
-      border-radius: 15px;
+      border: 2px solid ${props => props.theme['gray-300']};;
+      border-radius: 5px;
+      color: ${props => props.theme['gray-300']};;
       font-weight: bold;
       font-size:1.1rem;
       background-color: transparent;
@@ -145,8 +145,9 @@ export const VideoSection = styled.div`
 
       &:hover { 
           transform: scale(1.1);
-          color: ${props => props.theme['rb-papaia']};     
-          border-color: ${props => props.theme['rb-papaia2']};     
+          color: ${props => props.theme['kam-pink']};     
+          border-color: ${props => props.theme['kam-pink']};
+          background-color: ${props => props.theme["kam-blue"]} ;
         }
 
       @media (max-width: 800px) {

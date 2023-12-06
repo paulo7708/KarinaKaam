@@ -12,9 +12,14 @@ export const PortStyle = styled.div`
   /* config Rocket */
   width: 100%;
   max-width: 1120px;
-  margin: 4rem auto 0;
+  margin: 1rem auto 0;
   padding: 0 1.5rem 7rem 1.5rem;
 
+  @media (max-width: 800px) {
+    h2{
+      font-size: 1.2rem;
+    }
+  }
   p {
       display: block;
       margin-block-start: 1em;
