@@ -4,11 +4,9 @@ import svg1 from '../../assets/monick-fiuza-arquitetura-e-design-the-house-osasc
 export default function Portfolio(){
   return(
     <PortStyle>
+      <p className=' title'><span>———</span>&nbsp; Projetos Entregues &nbsp; <span>———</span></p>
       <div>
-        <p>———&nbsp; SERVIÇOS&nbsp; ———</p>
-      </div>
-      <div>
-        <h3>Clique nas imagens e veja os projetos:</h3>
+        <h2>Clique nas imagens e veja os projetos:</h2>
       </div>
       <ContainerCard>
           <Card>

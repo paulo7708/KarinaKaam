@@ -23,8 +23,12 @@ export const ImgIcon = styled.div`
   @media (max-width: 800px) {    
     margin: 3rem;
   
-}
+  }
+
+  
+  
 `
+
 export const Section = styled.section`
   display: flex;
   flex-direction: row;

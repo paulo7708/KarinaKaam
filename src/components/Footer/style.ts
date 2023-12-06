@@ -15,9 +15,9 @@ export const Section = styled.section`
     padding-left: 3rem;
   }
   
-  @media (max-width: 1200px) {
+  /* @media (max-width: 1200px) {
     display: none;
-  }
+  } */
 `
 
 export const RowSection = styled.section`

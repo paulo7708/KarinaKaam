@@ -47,7 +47,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   h3 {
     font-size: 1.8rem;
-    color: ${(props) => props.theme["text"]} 
+    color: ${(props) => props.theme["gray-300"]} 
   }
   p {
     font-size: 1.3rem;

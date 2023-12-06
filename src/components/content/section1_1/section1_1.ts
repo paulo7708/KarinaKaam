@@ -7,11 +7,11 @@ export const VideoSection = styled.div`
   display: flex;
   width: 100%;
   background-color: transparent;
-  padding-top: 4rem;
+  
   
 
   @media (min-width: 1500px) {
-    height: 60vh;
+    padding: 0rem 0rem 0rem 4rem ;
 
     div {
       h1{
@@ -26,9 +26,10 @@ export const VideoSection = styled.div`
     }
   }
 
-  @media (min-width: 1300px) {
-    height: 70vh;
+  @media (max-width: 1300px) {
+    padding: 0rem 0rem 0rem 1rem ;
   }
+
   video {
     object-position: center;
     width: 50%;
@@ -51,6 +52,7 @@ export const VideoSection = styled.div`
       max-height: 20rem;
       object-position: top;
     }
+    
   }   
 
   div {
@@ -64,16 +66,23 @@ export const VideoSection = styled.div`
     max-width: 65%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -35px;
     border-radius: 10px;
-    margin: 0 5rem;
+    
+
+    @media (min-width: 1301px) {
+      margin: 0 5rem;
+    }
+
+    @media (max-width: 1280px) {
+      margin: 0 2rem;
+    }
 
     @media (max-width: 800px) {
-      
-      max-width: 75%;
+      margin: 0;
+      max-width: 100%;
       padding: 2rem 0;
-      margin: 1rem 3rem;
 
       h1 {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
       }
       h3 {
         font-size: 1.2rem;

@@ -40,12 +40,12 @@ export const PortStyle = styled.div`
   }
 `
 export const PortBtn = styled.a`
-  text-decoration: none;
-    margin-top: 0.5rem;
+    text-decoration: none;
+    margin-top: 0.8rem;
     font-size: 2rem;
     border: 3px solid ${(props) => props.theme["gray-300"]};
     color: ${(props) => props.theme["gray-300"]};
-    padding: 0.8rem 5rem;
+    padding: 0.5rem 4rem;
     transition: 0.2s;
     @media (max-width: 800px){
       padding: 0.8rem 2rem;

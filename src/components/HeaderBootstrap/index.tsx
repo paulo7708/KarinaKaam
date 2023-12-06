@@ -5,7 +5,7 @@ import { HashLink as Link } from 'react-router-hash-link';
 
 import logoDark from '../../assets/logo/4logoNavGray.png'
 import "./index.css"
-import { Users } from 'phosphor-react';
+import { Users, WhatsappLogo } from 'phosphor-react';
 
 //xl|lg|md|sm
 11
@@ -68,7 +68,7 @@ export const HeaderBootstrap = () => {
               ><Users className='whatsNav' size={28} color={'#FFF'} weight="fill"/>Atendimento
               </Nav.Link>
 
-              {/* <a className='whatsNav' href="https://wa.me/5511920181537" target="_blank"><WhatsappLogo size={33} /></a> */}
+              <a className='whatsNav' href="https://wa.me/5511920181537" target="_blank"><WhatsappLogo size={33} color="#dab4d1"/></a>
             </Nav>
           </Navbar.Collapse>
         </Container>

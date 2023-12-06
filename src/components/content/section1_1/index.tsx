@@ -18,20 +18,20 @@ export function Section1_1({ btnText, text, title, subTitle, id, image }: Sectio
 
       <img src={image} alt="" />
       <div>
-        <Fade top duration={2000} delay={500}>
+        <Fade bottom duration={3000} delay={500}>
           <h3>{subTitle}</h3>
         </Fade>
-        <Fade top duration={2000} delay={1200}>
+        <Fade bottom duration={3000} delay={1200}>
           <h1>
-            {title}
+          <span>———</span>&nbsp;&nbsp;{title}
           </h1>
         </Fade>
-        <Fade top duration={2500} delay={1200}>
+        <Fade bottom duration={3500} delay={1200}>
           <p>
             {text}
           </p>
         </Fade>
-        <Fade top duration={2500} delay={1200}>
+        <Fade bottom duration={2500} delay={1200}>
           <article>
             <NavLink to={"/faleconosco"}>{btnText}</NavLink>
           </article>

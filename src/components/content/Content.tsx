@@ -44,13 +44,16 @@ export const Content = () => {
           card4="Deseja evitar desperdício de materiais e economizar tempo"
           strong="Se você se identifica com essas situações abaixo, nós podemos te ajudar:"
         />
-        <ImgIcon id="sobre" />
+        <ImgIcon id="sobre"/>
+        <ImgIcon className="sobre">
+          <h3> Quem somos &nbsp;</h3>
+        </ImgIcon>
         <Section1_1
           id=""
           image={image1}
           title='Karina Kaam Oliveira
           '
-          subTitle='Quem somos'
+          subTitle=''
           text='
           Formada em Design de Interiores e Personal Organizer, no qual me apaixonei e me identifiquei na profissão. Busco sempre mais conhecimento para me aperfeiçoar a cada dia, solucionando problemas para meus clientes com profissionalismo e dedicação. 
 

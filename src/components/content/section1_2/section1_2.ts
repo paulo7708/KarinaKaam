@@ -4,14 +4,11 @@ export const StyledSection = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin: 2rem 10rem;
-  width: 100%;
-  height: 80vh;
   z-index: 2;
 
   @media (min-width: 1500px) {
+    margin: 10rem 5rem 10rem 0rem;
     padding: 0;
-    height: 60vh;
 
     div {
       h1{
@@ -28,14 +25,11 @@ export const StyledSection = styled.div`
 
   @media (min-width: 1500px) {
     padding: 2rem 0;
-    height: 60vh;
   }
 
-  @media (min-width: 1300px) {
-    /* padding: 0 5rem; */
-    height: 70vh;
+  @media (max-width: 1280px) {
+    padding: 10rem 0;
   }
-
   
 
   img {
@@ -45,23 +39,15 @@ export const StyledSection = styled.div`
     border-radius: 10px ;
   }   
 
-    
-
-  @media (max-width: 1440px) {
-    /* margin-bottom: -9.8rem; */
-    
-  }
-
-  
 
   @media (max-width: 800px) {
     display: flex;
     flex-direction: column-reverse;
-
+    padding: 0;
     img {
       width: 100%;
-      min-height: 18rem;
       object-position: top;
+      height: 350px;
     }
   }
   
@@ -70,16 +56,23 @@ export const StyledSection = styled.div`
     justify-content: center;
     flex-direction: column;    
     gap: 1rem;
-    max-width: 75%;
-    height: 100%;
+    
     /* box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -35px; */
-    padding: 0 4rem;
     
     
+    @media (min-width: 1281px) {
+      max-width: 75%;
+      padding: 0 4rem;
+    }
+
+    @media (max-width: 1280px) {
+      margin: 0 2rem;
+    }
+      
     @media (max-width: 800px) {
-      width: 80%;
+      width: 100%;
       padding: 1rem 0;
-      margin: 01rem 0 1rem 3rem;
+      margin: 0;
 
       h1 {
         font-size: 0.8rem;
@@ -103,8 +96,12 @@ export const StyledSection = styled.div`
       }
     }
     span{
-      color: ${props => props.theme['blue-500']};
-    }
+    color:#E1E1E6;
+    font-size:1.5rem;
+    color: #E1E1E6;
+    font-weight: 600;
+    text-shadow: 1px 0px 0px #E1E1E6;
+  }
     h3 {
       font-family: Eras;
       color: ${props => props.theme['gray-400']};

@@ -75,6 +75,26 @@ export const HeaderForm = styled.div`
   h1, h3, p {
     color: #000;
   }
+
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  p {
+      display: block;
+      margin-block-start: 1em;
+      margin-block-end: 1em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      color: ${props => props.theme["gray-400"]};
+      font-weight: 600;
+      text-shadow: 1px 0px 0px #4B4B4D;
+    }
   
 `
 export const FormContainer = styled.section`

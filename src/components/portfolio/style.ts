@@ -24,6 +24,28 @@ export const PortStyle = styled.div`
     }
   }
 
+  .title{
+    padding: 2rem 0;
+    font-size:1.5rem;
+    border:none;
+    color:#E1E1E6;
+  }
+
+  span{
+    color:#E1E1E6;
+    font-size:1.5rem;
+    color: #E1E1E6;
+    font-weight: 600;
+    text-shadow: 1px 0px 0px #E1E1E6;
+  }
+
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    text-align: center;
+  }
+  
+
   a{
     text-decoration: none;
     margin-top: 0.5rem;
