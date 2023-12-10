@@ -9,24 +9,20 @@ export const Contact = styled.section`
   align-items: center;
   flex-wrap: wrap;
   gap: 5rem;
-  padding-top: 8rem;
-
+  padding-top: 10rem;
+/* 
   background-image: url(${bgImg});
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-x: center;
+  background-position-x: center; */
   
   
   @media (max-width: 1072px) {
     background-position-x: right;
     @media (max-width: 1072px) {
-    padding-top: 18rem;
-    }
-    
-    section {
-      width: 90%;
-      height: 80vh;
-    }
+    padding-top: 11rem;
+    }    
+
   }
 
   div {
@@ -72,9 +68,7 @@ export const HeaderForm = styled.div`
   justify-content: center;
   align-items: center;
 
-  h1, h3, p {
-    color: #000;
-  }
+  
 
   h2{
     display: flex;
@@ -85,16 +79,7 @@ export const HeaderForm = styled.div`
     text-align: center;
     font-size: 1.5rem;
   }
-  p {
-      display: block;
-      margin-block-start: 1em;
-      margin-block-end: 1em;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
-      color: ${props => props.theme["gray-400"]};
-      font-weight: 600;
-      text-shadow: 1px 0px 0px #4B4B4D;
-    }
+  
   
 `
 export const FormContainer = styled.section`
@@ -114,19 +99,21 @@ export const FormContainer = styled.section`
   @media (max-width: 2560px) {
     padding: 2rem;
   }
-
-  @media (max-width: 1072px) {
-    box-shadow: none;    
-    background: transparent;
-    
+  
+  @media (max-width: 450px) {
     form {
-      padding: 3rem;
-      label {
-      color: black;
-    }
+      padding: 0;      
     }
   }
-  
+  p {
+      text-align: center;
+      color: ${props => props.theme["gray-200"]};
+      font-weight: 600;
+      /* text-shadow: 1px 0px 0px #4B4B4D; */
+      @media(max-width: 600px){
+        font-size: 1.15rem;
+      }
+  }
 
   h1 {
     margin-bottom: 14px;
@@ -136,8 +123,8 @@ export const FormContainer = styled.section`
   }
 
   form {
-    max-width: 600px;
-    width: 40rem;
+    
+    max-width: 40rem;
     display: flex;
     flex-direction: column;
     
@@ -175,19 +162,32 @@ export const FormContainer = styled.section`
   }
 
   .button {
-    height: 34px;
-    border-radius: 10px;
-    border: 0;
-    cursor: pointer;
-    background-color: ${props => props.theme["rb-papaia"]};
-    font-size: 18px;
-    color: #fff;
-    transition: background-color, transform 0.8s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-align: center;
+    height: 4rem;
+    margin-top: 0.8rem;
+    font-size: 2rem;
+    border: 3px solid ${(props) => props.theme["kam-pink"]};
+    color: ${(props) => props.theme['kam-pink']};
+    background: transparent;
+      transition: all 0.2s ease-in-out;
+      @media (max-width: 800px){
+      padding: 0.8rem 2rem;
 
-    &:hover {
-      background-color:${props => props.theme["rb-papaia2"]};
-      transform: scale(1.01);
-  }
+        p{      
+        font-size: 1.1rem;      
+      };
+    }
+
+    &:hover { 
+          transform: scale(1.1);
+      background-color: ${(props) => props.theme['kam-blue']};
+      color:  ${(props) => props.theme['kam-pink']};
+      border: 3px solid ${(props) => props.theme["kam-pink"]};
+    }
   }
 `;
 

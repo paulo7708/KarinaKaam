@@ -1,10 +1,9 @@
 import { HashLink as Link } from 'react-router-hash-link';
 import Nav from 'react-bootstrap/Nav';
 import Carousel from 'react-bootstrap/Carousel';
-
 import car1 from '../../assets/carrosel/Artboard-3_1.jpg'
-import car2 from '../../assets/carrosel/Artboard-3_2.jpg'
-import car3 from '../../assets/carrosel/Artboard-3_3.jpg'
+import car2 from '../../assets/carrosel/Artboard-3_2.png'
+import car3 from '../../assets/carrosel/Artboard-3_3.png'
 import "./index.css"
 
 import Fade from 'react-reveal/Fade'
@@ -20,7 +19,7 @@ function CarroselBootstrap() {
         />
         <Carousel.Caption className='desfoque carText'>
 
-          <Fade top duration={2000} delay={500}>
+          <Fade top duration={3000} delay={500}>
             <h3>ARQUITETURA E DESIGN DE INTERIORES</h3>      
 
             <p>Ajudando à transformar seus ambientes em espaços criativos, e funcionais de maneira pratica e eficiente.</p>
@@ -41,9 +40,10 @@ function CarroselBootstrap() {
       </Carousel.Item>
 
       <Carousel.Item className='carousel-item'>
-        <video autoPlay loop muted
+        <img
           className="d-block w-100"
           src={car2}
+          alt="Second slide"
         />
 
         <Carousel.Caption className='desfoque'>

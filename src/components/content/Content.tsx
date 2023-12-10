@@ -41,7 +41,7 @@ export const Content = () => {
           card1="Quer personalizar o seu ambiente, mas está em dúvida por onde começar?"
           card2="Tem dificuldades em supervisionar a construção e os profissionais"
           card3="Deseja evitar desperdício de materiais e economizar tempo"
-          card4="Deseja evitar desperdício de materiais e economizar tempo"
+          card4="Não sabe como escolher os profissionais e serviços corretos para a obra"
           strong="Se você se identifica com essas situações abaixo, nós podemos te ajudar:"
         />
         <CompPortfolio />

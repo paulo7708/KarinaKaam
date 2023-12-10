@@ -58,14 +58,17 @@ export const Form = () => {
       <FormContainer>
         <HeaderForm>
 
-        
+
           {/* <h2>FALE CONOSCO &nbsp;           
           </h2> */}
-          
-          <p>Preencha o formulário para falar conosco. Se preferir, entre em contato pelo WhatsApp ou E-mail.</p>
-          
+
+
+
         </HeaderForm>
         <form onSubmit={sendEmail}>
+
+          <p>Preencha o formulário para falar conosco. Se preferir, entre em contato pelo WhatsApp ou E-mail.</p>
+          <br />
           <label htmlFor="fname">
             Qual o seu nome ?
           </label>

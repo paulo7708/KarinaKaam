@@ -8,7 +8,7 @@ export const Section = styled.section`
   height: 25rem;
   /* background-color: ${props => props.theme['white']}; */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-top: 4px solid ${props => props.theme["rb-blue"]};
+  border-top: 4px solid ${props => props.theme["kam-blue"]};
 
   @media (max-width: 1500px) {
     padding-right: 2rem;

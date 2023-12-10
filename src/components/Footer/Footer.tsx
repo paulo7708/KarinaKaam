@@ -1,8 +1,6 @@
-import { Copyright, Envelope, PhoneCall } from "phosphor-react"
+import { Copyright } from "phosphor-react"
 import { RowSection, Section } from "./style"
 import logoDark from '../../assets/logo/4logoNavGray.png'
-import { Nav } from "react-bootstrap"
-import { HashLink as Link } from 'react-router-hash-link';
 
 
 export const Footer = () => {
