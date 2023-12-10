@@ -25,7 +25,7 @@ export const HeaderBootstrap = () => {
 
   return (
     <header className="header">
-      <Navbar collapseOnSelect id='nave' expand="lg" variant="light">
+      <Navbar collapseOnSelect id='nave' expand="lg" variant="dark">
         <Container className="px-3">
           <Navbar.Brand className='d-flex px-1 text-secondary'
             as={Link}

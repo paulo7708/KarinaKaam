@@ -12,13 +12,13 @@ function Fac() {
         <Accordion.Item className='acc' eventKey="0">
           <Accordion.Header  >Como faço pra solicitar um orçamento?</Accordion.Header>
           <Accordion.Body className='acc'>
-            Entre em contato conosco através do WhatsApp ou e-mail.
+            Entre em contato conosco através do WhatsApp numero (00) 99999- 9999 ou do e-mail. KarinaKam@gmail.com
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item className='acc' eventKey="1">
           <Accordion.Header>Em qual momento receberei uma prévia do projeto?</Accordion.Header>
           <Accordion.Body>
-            O prazo de entrega do projeto 3D varia conforme a sua complexidade.
+            O prazo de entrega do projeto 3D varia de acordo com a complexidade do projeto e das necessidades do cliente.
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item className='acc' eventKey="2">

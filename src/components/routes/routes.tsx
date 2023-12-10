@@ -3,6 +3,7 @@ import { Default } from "../../layouts/default/Default";
 import { Content } from "../content/Content";
 import { Form } from "../form";
 import Portfolio from "../portfolio";
+import { Saopaulo } from "../portfolio/pages/saopaulo";
 
 
 
@@ -15,6 +16,8 @@ export const Router = () => {
           <Route path="/" element={<Content />} />
           <Route path="/faleconosco" element={<Form />} />
           <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/saopaulo" element={<Saopaulo />} />
+
         </Route>
 
     </Routes>
