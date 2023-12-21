@@ -15,7 +15,6 @@ export const StyleContainer = styled.section`
   gap: 3rem;
 
   img{
-    max-width: 80%;
-    
-  }
+    max-width: 80%;    
+  }  
 `

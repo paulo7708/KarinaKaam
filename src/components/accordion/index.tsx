@@ -8,7 +8,7 @@ function Fac() {
     <div className='paddingTop'>
       <p className=' title'><span>———</span>&nbsp; F.A.C &nbsp; <span>———</span></p>
       <h2 id='Trosa'>DÚVIDAS FREQUENTES</h2>
-      <Accordion className='AcContainer'>
+      <Accordion defaultActiveKey="0" className='AcContainer'>
         <Accordion.Item className='acc' eventKey="0">
           <Accordion.Header  >Como faço pra solicitar um orçamento?</Accordion.Header>
           <Accordion.Body className='acc'>

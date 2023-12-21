@@ -12,10 +12,10 @@ export default function Portfolio(){
       </div>
       <ContainerCard>
 
-          {Port.map(({ h1, img, href }) => {
+          {Port.map(({ h1, img, path }) => {
             return(
               <Card>
-                <a href={href}>
+                <a href={path}>
                   <img src={img} />
                   <h1>{h1}</h1>
                 </a>

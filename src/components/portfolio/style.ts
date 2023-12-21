@@ -74,6 +74,8 @@ export const Card = styled.div`
     align-items: center;
     border: solid 2px transparent;
     border-radius: 2px;
+
+    width: 358px;
     
 
     a{
@@ -85,12 +87,15 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
-        width: 258px;
+        width: 338px;
         height: 172px;
       }
 
       &:hover {
         scale: 1.04;
+      }
+      h1{
+        font-size: 1.2rem;
       }
     }
   
