@@ -49,7 +49,7 @@ export const HeaderBootstrap = () => {
 
               <Nav.Link eventKey="2" id='nav-links' className='ms-auto me-auto'
                 as={Link}
-                to={"/portfolio"}>Portfólio
+                to={"/preportfolio"}>Portfólio
               </Nav.Link>
 
               <Nav.Link eventKey="3" id='nav-links' className='ms-auto me-auto'

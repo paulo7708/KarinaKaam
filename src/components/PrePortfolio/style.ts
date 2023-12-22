@@ -69,13 +69,14 @@ export const Card = styled.div`
   
   
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     border: solid 2px transparent;
     border-radius: 2px;
+    gap: 2rem;
 
-    width: 358px;
+    width: 438px;
     
 
     a{
@@ -87,8 +88,12 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
-        width: 338px;
-        height: 172px;
+        width: 428px;
+        height: 222px;
+        @media(max-width: 430px){
+          width: 328px;
+          height: 182px;
+        }
       }
 
       &:hover {
