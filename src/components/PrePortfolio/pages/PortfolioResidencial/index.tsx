@@ -1,5 +1,5 @@
-import { Card, ContainerCard, PortStyle } from "./style";
-import { Port } from './contentPort.ts'
+import { Card, ContainerCard, PortStyle } from "./../../style.ts";
+import { PortResidencial } from './../../contentPort.ts'
 
 
 
@@ -12,7 +12,7 @@ export default function Portfolio(){
       </div>
       <ContainerCard>
 
-          {Port.map(({ h1, img, path }) => {
+          {PortResidencial.map(({ h1, img, path }) => {
             return(
               <Card>
                 <a href={path}>
