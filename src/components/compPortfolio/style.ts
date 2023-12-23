@@ -33,7 +33,7 @@ export const PortStyle = styled.div`
 
   h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
+    font-weight: 700;
     text-align: center;
   }
 
@@ -107,6 +107,9 @@ export const Card = styled.div`
 
       &:hover {
         scale: 1.04;
+      }
+      h1{
+        font-size: 1.2rem;
       }
 
       

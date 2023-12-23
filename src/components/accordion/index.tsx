@@ -38,7 +38,7 @@ function Fac() {
       <Contato>
         <p>Caso você tenha alguma dúvida que não foi respondida aqui nessa seção,<br />entre em contato conosco</p>
 
-        <PortBtn href="/portfolio">
+        <PortBtn href="/faleconosco">
           Entre em contato
         </PortBtn>
       </Contato>

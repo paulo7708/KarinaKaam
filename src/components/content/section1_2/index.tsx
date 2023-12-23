@@ -23,12 +23,12 @@ export function Section1_2({ btnText, img, text, title, subTitle, id }: Section1
             <span>———</span>&nbsp;&nbsp;{title}
           </h1>
         </Slide>
-        <Slide bottom duration={2500} delay={600}>
+        <Slide bottom duration={2500} delay={200}>
           <p>
             {text}
           </p>
         </Slide>
-        <Slide top duration={2500} delay={700}>
+        <Slide top duration={2500} delay={200}>
           <article>
             <NavLink to={"/faleconosco"}>{btnText}</NavLink>
           </article>

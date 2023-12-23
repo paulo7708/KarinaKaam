@@ -1,5 +1,6 @@
-import svg1 from '../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
 import { Card, ContainerCard, PortBtn, PortStyle } from './style'
+import { PortComercial, PortResidencial } from '../PrePortfolio/contentPort'
+import { NavLink } from 'react-router-dom'
 
 export function CompPortfolio() {
   return (
@@ -9,30 +10,31 @@ export function CompPortfolio() {
         <h2>CONHEÇA ALGUNS PROJETOS</h2>
         <ContainerCard>
           <Card>
-            <a href="/portfolio">
-              <img src={svg1} />
-              <h1>Sp</h1>
-            </a>
+            <NavLink to={PortComercial[1].path}>
+              <img src={PortComercial[1].img} />
+              <h1>{PortComercial[1].h1}</h1>
+            </NavLink>
           </Card>
           <Card>
-            <a href="/portfolio">
-              <img src={svg1} />
-              <h1>Sp</h1>
-            </a>
+            <NavLink to={PortComercial[3].path}>
+              <img src={PortComercial[3].img} />
+              <h1>{PortComercial[3].h1}</h1>
+            </NavLink>
           </Card>
           <Card className='hiddenMob'>
-            <a href="/portfolio">
-              <img src={svg1} />
-              <h1>Sp</h1>
-            </a>
+            <NavLink to={PortResidencial[0].path}>
+              <img src={PortResidencial[0].img} />
+              <h1>{PortResidencial[0].h1}</h1>
+            </NavLink>
           </Card>
-          
+
 
         </ContainerCard>
-        <PortBtn href="/portfolio">
-          <p>Clique aqui para ver mais projetos</p>
-        </PortBtn>
-
+        <NavLink to='/faleconosco'>
+          <PortBtn>
+            Clique aqui para ver mais projetos
+          </PortBtn>
+        </NavLink>
 
 
       </PortStyle>

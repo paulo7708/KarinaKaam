@@ -51,7 +51,7 @@ export const PortStyle = styled.div`
 
   h2{
     font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
+    font-weight: 700;
     text-align: center;
   }
   strong{

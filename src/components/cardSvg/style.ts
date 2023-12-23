@@ -17,11 +17,7 @@ export const PortStyle = styled.div`
   
 
   p {
-      display: block;
-      margin-block-start: 1rem;
-      margin-block-end: 1rem;
-      margin-inline-start: 0px;
-      margin-inline-end: 0px;
+      
       font-size: 1.5rem;
       text-align: center;
       color: ${(props) => props.theme["gray-300"]};
@@ -46,7 +42,7 @@ export const PortStyle = styled.div`
   }
 `
 
-export const PortBtn = styled.a`
+export const PortBtn = styled.p`
   text-decoration: none;
     margin-top: 0.5rem;
     font-size: 2rem;
