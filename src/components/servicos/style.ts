@@ -50,6 +50,9 @@ export const PortStyle = styled.div`
   }
 
   h2{
+    background-image: -webkit-linear-gradient(50deg, #dab4d1, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
@@ -117,6 +120,7 @@ export const Card = styled.div`
 
     width: 25%;
     background-color: ${(props) => props.theme['gray-600']};
+    
     padding: 1rem 2rem;
     p {
       text-align: center;

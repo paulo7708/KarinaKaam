@@ -7,16 +7,21 @@ import img4 from '../../../../assets/Projeto comercial/Saláo de Beleza - Gabrie
 import img5 from '../../../../assets/Projeto comercial/Saláo de Beleza - Gabriela Garcia - Bauru/05.png'
 import img6 from '../../../../assets/Projeto comercial/Saláo de Beleza - Gabriela Garcia - Bauru/06.png'
 import img7 from '../../../../assets/Projeto comercial/Saláo de Beleza - Gabriela Garcia - Bauru/07.png'
+import { CarouselNavigate } from '../carouselNavigate'
 
 const imagens = [img1, img2, img3, img4, img5, img6, img7]
 
 export const SalaoGabrielaGarcia = () => {
   
   return(
-    <StyleContainer>
-      {imagens.map((imagem) => (
-        <img key={imagem} src={imagem} alt={imagem} />
-      ))}
-    </StyleContainer>
+    <>
+      <StyleContainer>
+        {imagens.map((imagem) => (
+          <img key={imagem} src={imagem} alt={imagem} />
+        ))}
+
+      </StyleContainer>
+      <CarouselNavigate />
+    </>
   )
 }

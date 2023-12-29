@@ -12,16 +12,21 @@ import img9 from '../../../../assets/Projeto residencial/Residencia 04/9.png'
 import img10 from '../../../../assets/Projeto residencial/Residencia 04/10.png'
 import img11 from '../../../../assets/Projeto residencial/Residencia 04/11.png'
 import img12 from '../../../../assets/Projeto residencial/Residencia 04/12.png'
+import { CarouselNavigate } from '../carouselNavigate'
 
 const imagens = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, img11, img12]
 
 export const Residencia4 = () => {
   
   return(
-    <StyleContainer>
-      {imagens.map((imagem) => (
-        <img key={imagem} src={imagem} alt={imagem} />
-      ))}
-    </StyleContainer>
+    <>
+      <StyleContainer>
+        {imagens.map((imagem) => (
+          <img key={imagem} src={imagem} alt={imagem} />
+        ))}
+
+      </StyleContainer>
+      <CarouselNavigate />
+    </>
   )
 }

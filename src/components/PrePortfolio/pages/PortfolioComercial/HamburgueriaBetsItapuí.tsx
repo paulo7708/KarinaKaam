@@ -7,16 +7,21 @@ import img5 from '../../../../assets/Projeto comercial/Hamburgueria - Bets Itapu
 import img6 from '../../../../assets/Projeto comercial/Hamburgueria - Bets Itapuí/06.png'
 import img7 from '../../../../assets/Projeto comercial/Hamburgueria - Bets Itapuí/07.png'
 import img8 from '../../../../assets/Projeto comercial/Hamburgueria - Bets Itapuí/08.png'
+import { CarouselNavigate } from '../carouselNavigate'
 
 const imagens = [img1, img2, img3, img5, img6, img7, img8]
 
 export const HamburgueriaBetsItapuí = () => {
   
   return(
-    <StyleContainer>
-      {imagens.map((imagem) => (
-        <img key={imagem} src={imagem} alt={imagem} />
-      ))}
-    </StyleContainer>
+    <>
+      <StyleContainer>
+        {imagens.map((imagem) => (
+          <img key={imagem} src={imagem} alt={imagem} />
+        ))}
+
+      </StyleContainer>
+      <CarouselNavigate />
+    </>
   )
 }

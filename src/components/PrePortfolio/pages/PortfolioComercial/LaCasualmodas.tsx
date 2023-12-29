@@ -6,16 +6,21 @@ import img2 from '../../../../assets/Projeto comercial/La Casual modas - loja in
 import img4 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/04.png'
 import img5 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/05.png'
 import img1 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/06.png'
+import { CarouselNavigate } from '../carouselNavigate'
 
 const imagens = [img0,img1, img2, img4, img5, img6]
 
 export const LaCasualmodas = () => {
   
   return(
-    <StyleContainer>
-      {imagens.map((imagem) => (
-        <img key={imagem} src={imagem} alt={imagem} />
-      ))}
-    </StyleContainer>
+    <>
+      <StyleContainer>
+        {imagens.map((imagem) => (
+          <img key={imagem} src={imagem} alt={imagem} />
+        ))}
+
+      </StyleContainer>
+      <CarouselNavigate />
+    </>
   )
 }
