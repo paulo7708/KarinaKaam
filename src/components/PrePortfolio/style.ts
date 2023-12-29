@@ -61,7 +61,7 @@ export const ContainerCard = styled.div`
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 5rem;
   max-width: 1400px;
 
 `
@@ -76,7 +76,7 @@ export const Card = styled.div`
     border-radius: 2px;
     gap: 2rem;
 
-    width: 438px;
+    width: 408px;
     
 
     a{
@@ -88,6 +88,7 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
+        box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, #F5F2F0 -20px 20px, rgba(102, 40, 143, 0.05) -25px 25px;
         width: 428px;
         height: 222px;
         @media(max-width: 430px){
@@ -101,6 +102,7 @@ export const Card = styled.div`
       }
       h1{
         font-size: 1.2rem;
+        padding-top:2rem;
       }
     }
   

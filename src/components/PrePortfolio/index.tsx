@@ -17,7 +17,9 @@ export default function PrePortfolio() {
           <NavLink to='/PortfolioComercial'>
             <img src={comImg} />
             <h1>Projetos Comerciais</h1>
-          </NavLink>
+          </NavLink>          
+        </Card>
+        <Card>
           <NavLink to='/PortfolioResidencial'>
             <img src={resImg} />
             <h1>Projetos Residenciais</h1>

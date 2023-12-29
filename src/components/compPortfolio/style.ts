@@ -78,7 +78,7 @@ export const ContainerCard = styled.div`
   align-items: center;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 2.5rem;
 
   
 `
@@ -101,6 +101,7 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
+        box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, transparent -20px 20px, transparent -25px 25px;
         width: 328px;
         height: 172px;
       }
@@ -109,6 +110,7 @@ export const Card = styled.div`
         scale: 1.04;
       }
       h1{
+        padding-top: 2rem;
         font-size: 1.2rem;
       }
 

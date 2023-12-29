@@ -33,40 +33,42 @@ export function CarouselNavigate() {
       >
         
         <SwiperSlide>
-          <Card key={PortRoute[numero+1 ? numero+1 : numero-5].path}>
-            <NavLink to={PortRoute[numero+1 ? numero+1 : numero-5].path}>
-              <img id='image' src={PortRoute[numero+1 ? numero+1 : numero-5].img} />
-              <h1>{PortRoute[numero+1 ? numero+1 : numero-5].h1}</h1>
+          <Card key={PortRoute[numero+5 ? numero+5 : numero-5].path}>
+            <NavLink to={PortRoute[numero+5 ? numero+5 : numero-5].path}>
+              <img id='image' src={PortRoute[numero+5 ? numero+5 : numero-5].img} />
+              <h1 className='textSpace'>{PortRoute[numero+5 ? numero+5 : numero-5].h1}</h1>
             </NavLink>
           </Card>
         </SwiperSlide>
 
         <SwiperSlide>
-          <Card key={PortRoute[numero+2 ? numero+2 : numero-5].path}>
-            <NavLink to={PortRoute[numero+2 ? numero+2 : numero-5].path}>
-              <img id='image' src={PortRoute[numero+2 ? numero+2 : numero-5].img} />
-              <h1>{PortRoute[numero+2 ? numero+2 : numero-5].h1}</h1>
+          <Card key={PortRoute[numero-4 ? numero-4 : numero+2].path}>
+            <NavLink to={PortRoute[numero-4 ? numero-4 : numero+2].path}>
+              <img id='image' src={PortRoute[numero-4 ? numero-4 : numero+2].img} />
+              <h1 className='textSpace'>{PortRoute[numero-4 ? numero-4 : numero+2].h1}</h1>
             </NavLink>
           </Card>
         </SwiperSlide>
-        
-        <SwiperSlide>
-          <Card key={PortRoute[numero+3 ? numero+3 : numero-5].path}>
-            <NavLink to={PortRoute[numero+3 ? numero+3 : numero-5].path}>
-              <img  id='image' src={PortRoute[numero+3 ? numero+3 : numero-5].img} />
-              <h1>{PortRoute[numero+3 ? numero+3 : numero-5].h1}</h1>
-            </NavLink>
-          </Card>
-        </SwiperSlide>
-        
+
         <SwiperSlide>
           <Card key={PortRoute[numero-1 ? numero-1 : numero+10].path}>
             <NavLink to={PortRoute[numero-1 ? numero-1 : numero+10].path}>
               <img id='image' src={PortRoute[numero-1 ? numero-1 : numero+10].img} />
-              <h1>{PortRoute[numero-1 ? numero-1 : numero+10].h1}</h1>
+              <h1 className='textSpace'>{PortRoute[numero-1 ? numero-1 : numero+10].h1}</h1>
             </NavLink>
           </Card>
         </SwiperSlide>
+        
+        {/* <SwiperSlide>
+          <Card key={PortRoute[numero+3 ? numero+3 : numero-5].path}>
+            <NavLink to={PortRoute[numero+3 ? numero+3 : numero-5].path}>
+              <img  id='image' src={PortRoute[numero+3 ? numero+3 : numero-5].img} />
+              <h1 className='textSpace'>{PortRoute[numero+3 ? numero+3 : numero-5].h1}</h1>
+            </NavLink>
+          </Card>
+        </SwiperSlide> */}
+        
+        
 
 
 

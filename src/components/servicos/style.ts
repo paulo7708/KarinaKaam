@@ -50,8 +50,6 @@ export const PortStyle = styled.div`
   }
 
   h2{
-    background-image: -webkit-linear-gradient(50deg, #dab4d1, #feab3a);
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;

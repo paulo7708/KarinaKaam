@@ -39,11 +39,15 @@ export const GlobalStyle = createGlobalStyle`
 
   h1 {
     font-size: 2.7rem;
-    color: ${(props) => props.theme["kam-pink"]}   
+    background-image: -webkit-linear-gradient(50deg, #dab4d1, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;  
   }
   h2 {
     font-size: 2rem;
-    color: ${(props) => props.theme["kam-pink"]} 
+    background-image: -webkit-linear-gradient(50deg, #dab4d1, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
   }
   h3 {
     font-size: 1.8rem;

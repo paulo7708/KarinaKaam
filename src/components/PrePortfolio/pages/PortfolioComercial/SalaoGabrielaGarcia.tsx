@@ -13,15 +13,15 @@ const imagens = [img1, img2, img3, img4, img5, img6, img7]
 
 export const SalaoGabrielaGarcia = () => {
   
-  return(
+  return (
     <>
       <StyleContainer>
         {imagens.map((imagem) => (
           <img key={imagem} src={imagem} alt={imagem} />
         ))}
-
+        <CarouselNavigate />
       </StyleContainer>
-      <CarouselNavigate />
+      
     </>
   )
 }

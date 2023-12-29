@@ -12,15 +12,15 @@ const imagens = [img0,img1, img2, img3, img4, img5]
 
 export const Salafisioterapia = () => {
   
-  return(
+  return (
     <>
       <StyleContainer>
         {imagens.map((imagem) => (
           <img key={imagem} src={imagem} alt={imagem} />
         ))}
-
+        <CarouselNavigate />
       </StyleContainer>
-      <CarouselNavigate />
+      
     </>
   )
 }

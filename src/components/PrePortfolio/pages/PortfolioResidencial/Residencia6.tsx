@@ -8,15 +8,15 @@ const imagens = [img1, img2]
 
 export const Residencia6 = () => {
   
-  return(
+  return (
     <>
       <StyleContainer>
         {imagens.map((imagem) => (
           <img key={imagem} src={imagem} alt={imagem} />
         ))}
-
+        <CarouselNavigate />
       </StyleContainer>
-      <CarouselNavigate />
+      
     </>
   )
 }

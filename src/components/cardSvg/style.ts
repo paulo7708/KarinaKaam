@@ -30,9 +30,11 @@ export const PortStyle = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     text-align: center;
+    
   }
   h3{
     color: ${(props) => props.theme["gray-300"]};
+    padding-bottom: 2rem;
   }
 
   a{
@@ -105,7 +107,23 @@ export const Card = styled.div`
       }
       
 
-      img{
+      .img1{
+        box-shadow: #B09987 -5px -5px, #D3BAA6 -10px -10px, #FFDDBD -15px -15px, transparent -20px -20px;
+        width: 358px;
+        height: 172px;
+      }
+      .img2{
+        box-shadow: #B09987 5px -5px, #D3BAA6 10px -10px, #FFDDBD 15px -15px, transparent 20px -20px;
+        width: 358px;
+        height: 172px;
+      }
+      .img3{
+        box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, transparent -20px 20px;
+        width: 358px;
+        height: 172px;
+      }
+      .img4{
+        box-shadow: #B09987 5px 5px, #D3BAA6 10px 10px, #FFDDBD 15px 15px, transparent 20px 20px;
         width: 358px;
         height: 172px;
       }

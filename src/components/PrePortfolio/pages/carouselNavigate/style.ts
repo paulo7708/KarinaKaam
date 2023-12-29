@@ -33,10 +33,9 @@ export const Card = styled.div`
       transition: 0.2s;
       
       img{
-        box-shadow: rgba(102, 40, 143, 0.3) -5px 5px, rgba(102, 40, 143, 0.2) -10px 10px, rgba(102, 40, 143, 0.1) -15px 15px, rgba(102, 40, 143, 0.1) -20px 20px, rgba(102, 40, 143, 0.05) -25px 25px;
+        box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, #F5F2F0 -20px 20px, rgba(102, 40, 143, 0.05) -25px 25px;
         width: 428px;
         height: 222px;
-        pagging-bottom:1rem;
         @media(max-width: 430px){
           width: 328px;
           height: 182px;

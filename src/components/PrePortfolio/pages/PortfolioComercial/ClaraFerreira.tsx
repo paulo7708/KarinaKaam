@@ -17,9 +17,9 @@ export const ClaraFerreira = () => {
         {imagens.map((imagem) => (
           <img key={imagem} src={imagem} alt={imagem} />
         ))}
-
+        <CarouselNavigate />
       </StyleContainer>
-      <CarouselNavigate />
+      
     </>
   )
 }

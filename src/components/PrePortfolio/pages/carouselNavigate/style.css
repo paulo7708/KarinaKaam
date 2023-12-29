@@ -1,9 +1,14 @@
 #style{
+  padding-top:2rem;
   @media(max-width:1100px){
     display:none;
   }
 }
 
 #image{
-  width: 20rem;
+  width: 40rem;
+}
+
+.textSpace{
+  padding-top:2rem;
 }
