@@ -4,6 +4,8 @@ import logoDark from '../../assets/logo/4logoNavGray.png'
 
 
 export const Footer = () => {
+  const ano = new Date()
+  const anoAtual = ano.getFullYear()
   return (
     <Section>
       <RowSection>
@@ -11,7 +13,7 @@ export const Footer = () => {
           <article>
             <img src={logoDark} alt="img" />
           </article>
-          <span><Copyright size={20} weight="bold" />2023 Todos os direitos reservados</span>
+          <span><Copyright size={20} weight="bold" />{anoAtual} Todos os direitos reservados</span>
         </div>
         
       </RowSection>

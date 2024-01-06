@@ -233,34 +233,10 @@ export const PortComercial = [
 
 export const PortResidencial = [
   {
-    img: res1,
-    h1: 'Residencia 1',
-    path: '/Residencia1',
-    component: Residencia1
-  },
-  {
-    img: res2,
-    h1: 'Residencia 2',
-    path: '/Residencia2',
-    component: Residencia2
-  },
-  {
-    img: res3,
-    h1: 'Residencia 3',
-    path: '/Residencia3',
-    component: Residencia3
-  },
-  {
-    img: res4,
-    h1: 'Residencia 4',
-    path: '/Residencia4',
-    component: Residencia4
-  },
-  {
-    img: res5,
-    h1: 'Residencia 5',
-    path: '/Residencia5',
-    component: Residencia5
+    img: res7,
+    h1: 'Residencia 7',
+    path: '/Residencia7',
+    component: Residencia7
   },
   {
     img: res6,
@@ -269,12 +245,37 @@ export const PortResidencial = [
     component: Residencia6
   },
   {
-    img: res7,
-    h1: 'Residencia 7',
-    path: '/Residencia7',
-    component: Residencia7
+    img: res5,
+    h1: 'Residencia 5',
+    path: '/Residencia5',
+    component: Residencia5
   },
   {
+    img: res4,
+    h1: 'Residencia 4',
+    path: '/Residencia4',
+    component: Residencia4
+  },
+  {
+    img: res3,
+    h1: 'Residencia 3',
+    path: '/Residencia3',
+    component: Residencia3
+  },
+  {
+    img: res2,
+    h1: 'Residencia 2',
+    path: '/Residencia2',
+    component: Residencia2
+  },
+  
+  {
+    img: res1,
+    h1: 'Residencia 1',
+    path: '/Residencia1',
+    component: Residencia1
+  },
+    {
     img: res8,
     h1: 'Residencia Praia',
     path: '/ResidenciaPraia',
@@ -292,5 +293,4 @@ export const PortResidencial = [
     path: '/ManCave',
     component: ManCave
   },
-
 ]

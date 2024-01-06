@@ -1,9 +1,25 @@
 import { FormEvent, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Contact, FormContainer, HeaderForm } from './style.ts'
-import { WhatsappLogo } from "phosphor-react";
+import { useForm } from 'react-hook-form'
+import * as z from 'zod'
+import { zodResolver  } from '@hookform/resolvers/zod'
 
-export const Form = () => {
+const formSchema = z.object({
+  name: z.string(),
+  subject: z.string(),
+  message: z.string(),
+  phone: z.string(),
+  email: z.string(),
+  quest1: z.string(),
+  quest2: z.string(),
+  quest3: z.string(),
+})
+
+type FormInputs = z.infer<typeof formSchema>
+
+
+export const FormDesign = () => {
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -13,8 +29,15 @@ export const Form = () => {
   const [quest2, setQuest2] = useState("");
   const [quest3, setQuest3] = useState("");
 
-  async function sendEmail(event: FormEvent) {
-    event?.preventDefault();
+  const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting }
+  } = useForm<FormInputs>({
+    resolver: zodResolver(formSchema),
+  })
+
+  async function handleSendEmail({ name,subject,message,email,phone,quest1,quest2,quest3 }: FormInputs) {  
 
     const templateParams = {
       name,
@@ -26,6 +49,7 @@ export const Form = () => {
       quest2,
       quest3
     };
+    console.log(templateParams)
 
     await emailjs
       .send(
@@ -57,24 +81,19 @@ export const Form = () => {
 
       <FormContainer>
         <HeaderForm>
-
-
           {/* <h2>FALE CONOSCO &nbsp;           
           </h2> */}
-
-
-
         </HeaderForm>
-        <form onSubmit={sendEmail}>
+        <form onSubmit={handleSubmit(handleSendEmail)}>
 
-          <p>Preencha o formulário para falar conosco. Se preferir, entre em contato pelo WhatsApp ou E-mail.</p>
+          <p>Preencha esse formulário a baixo para podermos te conhecer melhor.</p>
           <br />
           <label htmlFor="fname">
             Qual o seu nome ?
           </label>
           <input
+            {...register('name')}
             id="fname"
-            name="name"
             type="text"
             autoComplete="given-name"
             placeholder="Digite seu nome"
@@ -83,23 +102,18 @@ export const Form = () => {
             required
           />
 
-
-
           <label htmlFor="fselect">
             Aceita contato pelo WhatsApp?
           </label>
 
           <select
             id="fselect"
-            name="subject"
+            {...register('subject')}
             value={subject}
             onChange={(event) => setSubject(event.target.value)}
           >
-            <option value="Empresa">Sim</option>
-            <option value="Cliente">Apenas Email</option>
-            {/* <option value="Transferencias e Pagamentos">
-              Transferencias e Pagamentos
-            </option> */}
+            <option value="Whatsapp">Sim</option>
+            <option value="Email">Apenas Email</option>
           </select>
 
           <label className="label" htmlFor="femail">
@@ -107,7 +121,7 @@ export const Form = () => {
           </label>
           <input
             id="femail"
-            name="email"
+            {...register('email')}
             type="text"
             autoComplete="email"
             placeholder="Digite seu email"
@@ -122,7 +136,7 @@ export const Form = () => {
           <input
             id="fphone"
             className="input"
-            name="phone"
+            {...register('phone')}
             type="text"
             autoComplete="tel"
             placeholder="+55 (00) 00000 - 0000"
@@ -132,11 +146,11 @@ export const Form = () => {
           />
 
           <label className="label" htmlFor="fmessage">
-            Quais são os ambientes serão planejados?
+            Como conheceu nosso serviço?
           </label>
           <input
             id="fmessage"
-            name="message"
+            {...register('message')}
             placeholder="Sua resposta..."
             autoComplete="off"
             onChange={(event) => setMessage(event.target.value)}
@@ -149,11 +163,11 @@ export const Form = () => {
           </label>
           <input
             id="quest1"
-            name="quest1"
+            {...register('quest1')}
             placeholder="Sua resposta..."
             autoComplete="off"
-            onChange={(event) => setMessage(event.target.value)}
-            value={message}
+            onChange={(event) => setQuest1(event.target.value)}
+            value={quest1}
             required
           />
           <label className="label" htmlFor="quest2">
@@ -161,11 +175,11 @@ export const Form = () => {
           </label>
           <input
             id="quest2"
-            name="quest2"
+            {...register('quest2')}
             placeholder="Sua resposta..."
             autoComplete="off"
-            onChange={(event) => setMessage(event.target.value)}
-            value={message}
+            onChange={(event) => setQuest2(event.target.value)}
+            value={quest2}
             required
           />
           <label className="label" htmlFor="quest3">
@@ -173,17 +187,33 @@ export const Form = () => {
           </label>
           <input
             id="quest3"
-            name="quest3"
+            {...register('quest3')}
             placeholder="Sua resposta..."
             autoComplete="off"
-            onChange={(event) => setMessage(event.target.value)}
-            value={message}
+            onChange={(event) => setQuest3(event.target.value)}
+            value={quest3}
             required
           />
 
-          <input className="button" type="submit" value="Enviar" />
+          <input className="button" disabled={isSubmitting} type="submit" value="Enviar" />
         </form>
       </FormContainer>
     </Contact>
   );
+  // return ( FORMAPP.COM
+  //   <Contact>
+
+  //     <FormContainer>
+  //     <Iframe
+  //       url="https://respondto.forms.app/dawnbreakerph/seusite-form"
+  //       width="100%"
+  //       height="4500px" // Ajuste a altura conforme necessário
+  //       id="meuFormulario"
+  //       className="meuFormulario"
+  //       display="initial"
+  //       position="relative"
+  //     />
+  //     </FormContainer>
+  //   </Contact>
+  // );
 };

@@ -170,6 +170,7 @@ export const FormContainer = styled.section`
     height: 4rem;
     margin-top: 0.8rem;
     font-size: 2rem;
+    cursor: pointer;
     border: 3px solid ${(props) => props.theme["kam-pink"]};
     color: ${(props) => props.theme['kam-pink']};
     background: transparent;
@@ -182,8 +183,13 @@ export const FormContainer = styled.section`
       };
     }
 
-    &:hover { 
-          transform: scale(1.1);
+    &:disabled{
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    &:not(:disabled):hover { 
+      transform: scale(1.1);
       background-color: ${(props) => props.theme['kam-blue']};
       color:  ${(props) => props.theme['kam-pink']};
       border: 3px solid ${(props) => props.theme["kam-pink"]};

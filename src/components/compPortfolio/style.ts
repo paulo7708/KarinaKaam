@@ -100,8 +100,19 @@ export const Card = styled.div`
       text-decoration: none;
       transition: 0.2s;
       
-      img{
+      .img1{
         box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, transparent -20px 20px, transparent -25px 25px;
+        width: 328px;
+        height: 172px;
+      }
+      .img2{
+        box-shadow: #B09987 0px 5px, #D3BAA6 0px 10px, #FFDDBD 0px 15px, transparent 0px 20px, transparent 0px 25px;
+        
+        width: 328px;
+        height: 172px;
+      }
+      .img3{
+        box-shadow: #B09987 5px 5px, #D3BAA6 10px 10px, #FFDDBD 15px 15px, transparent 20px 20px;
         width: 328px;
         height: 172px;
       }

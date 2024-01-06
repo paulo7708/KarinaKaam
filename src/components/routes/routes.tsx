@@ -1,11 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import { Default } from "../../layouts/default/Default";
 import { Content } from "../content/Content";
-import { Form } from "../form";
 import { PortComercial, PortResidencial } from "../PrePortfolio/contentPort";
 import PrePortfolio from "../PrePortfolio";
 import PortfolioComercial from "../PrePortfolio/pages/PortfolioComercial";
 import PortfolioResidencial from "../PrePortfolio/pages/PortfolioResidencial";
+import PreForm from "../formPre";
+import { FormArq } from "../formArq";
+import { FormDesign } from "../formDesign";
 
 
 
@@ -16,7 +18,9 @@ export const Router = () => {
 
       <Route path="/" element={<Default />}>
         <Route path="/" element={<Content />} />
-        <Route path="/faleconosco" element={<Form />} />
+        <Route path="/faleconosco" element={<PreForm />} />
+          <Route path="/faleconosco/FormArq" element={<FormArq />} />
+          <Route path="/faleconosco/FormDesign" element={<FormDesign />} />
         <Route path="/preportfolio" element={<PrePortfolio />} />
         <Route path="/PortfolioComercial" element={<PortfolioComercial />} />
         <Route path="/PortfolioResidencial" element={<PortfolioResidencial />} />

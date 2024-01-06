@@ -65,7 +65,7 @@ export const HeaderBootstrap = () => {
               <Nav.Link eventKey="5" type="button" id='btn' className="nav-links ms-auto me-auto"
                 as={Link}
                 to={"/faleconosco"}
-              ><Users className='whatsNav' size={28} color={'#FFF'} weight="fill"/>Atendimento
+              ><Users className='whatsNav' size={28} color={'#FFF'} weight="fill"/>Orçamento
               </Nav.Link>
 
               <a className='whatsNav' href="https://wa.me/5511920181537" target="_blank"><WhatsappLogo size={33} color="#dab4d1"/></a>
