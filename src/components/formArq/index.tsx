@@ -10,7 +10,7 @@ const formSchema = z.object({
   name: z.string(),
   message: z.string(),
   phone: z.string(),
-  email: z.string(),  
+  email: z.string(),
 
   // checkbox Value component pai
   tenhoLote: z.string(),
@@ -44,31 +44,26 @@ type FormInputs = z.infer<typeof formSchema>
 
 
 export const FormArq = () => {
-  // base info
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
-  const [qntinvestir, setQntinvestir] = useState("");
-  const [outInfo, setOutInfo] = useState("");
-
-
-  // checkbox Value component pai
-  const [tenhoLote, setTenhoLote] = useState('');
-  const [melhorarlayout, setMelhorarLayout] = useState('');
-  const [regularizar, setRegularizar] = useState('')
-
-  // checkbox Value component filho Tenho Lote
-  const [m2Lote, setM2Lote] = useState('');
-  const [localizacaoLote, setLocalizacaoLote] = useState("");
-
-  // checkbox Value component filho melhorar Layout
-  const [mudarLayout, setMudarLayout] = useState('');
-  const [localizacaoLayout, setLocalizacaoLayout] = useState('')
-
-  // checkbox Value component filho Regularizar Prefeitura
-  const [localizacaoRegularizar, setLocalizacaoRegularizar] = useState('')
-  const [construido, setConstruido] = useState('')
+  const [formData, setFormData] = useState<FormInputs>({
+    name: "",
+    message: "",
+    phone: "",
+    email: "",
+    qntinvestir: "",
+    outInfo: "",
+    tenhoLote: "",
+    melhorarLayout: "",
+    regularizar: "",
+    m2Lote: "",
+    localizacaoLote: "",
+    mudarLayout: "",
+    localizacaoLayout: "",
+    localizacaoRegularizar: "",
+    construido: "",
+    mostrarLote: "",
+    mostrarDesign: "",
+    mostrarRegularizar: "",
+  });
 
   const {
     register,
@@ -77,95 +72,39 @@ export const FormArq = () => {
     formState: { isSubmitting }
   } = useForm<FormInputs>({
     resolver: zodResolver(formSchema),
+    defaultValues: formData,
   })
 
   const mostrarLote = watch('mostrarLote'); // Obtém o valor do campo 'mostrarCampo'
   const mostrarDesign = watch('mostrarDesign'); // Obtém o valor do campo 'mostrarCampo'
   const mostrarRegularizar = watch('mostrarRegularizar');
 
-  async function handleSendEmail({ name, message, email, phone, qntinvestir, outInfo, tenhoLote, melhorarLayout, regularizar, m2Lote, localizacaoLote, mudarLayout, localizacaoLayout, localizacaoRegularizar, construido }: FormInputs) {
+  const onSubmit = async (data: FormInputs) => {
+    event.preventDefault()
+    try {
+      const templateParams = { ...data };
 
-    const templateParams = {
-      name,
-      message,
-      email,
-      phone,
-
-      tenhoLote,
-      melhorarLayout,
-      regularizar,
-
-      m2Lote,
-      localizacaoLote,
-
-      mudarLayout,
-      localizacaoLayout,
-
-      localizacaoRegularizar,
-      construido,
-
-      qntinvestir,
-      outInfo,
-    };
-
-
-    await emailjs
-      .send(
+      await emailjs.send(
         "service_b8f2thd", //service ID
         "template_3qa2ark", //template ID
         templateParams, // templateParams
         "jzGM5Ta2MzRQSr_UV" //Public Key
-      )
-      .then(
-        (response) => {
-          console.log("email enviado", response.status, response.text);
-          setName("");
-          setMessage("");
-          setPhone("");
-          setEmail("");
+      );
 
-          setTenhoLote("");
-          setMelhorarLayout('');
-          setRegularizar("");
-
-          setM2Lote(''),
-          setLocalizacaoLote("");
-
-          setMudarLayout(''),
-          setLocalizacaoLayout('')
-
-          setQntinvestir("");
-          setOutInfo("");
-        },
-
-      ).catch((err) => {
-        console.log("erro", err);
-      });
-  }
-  console.log(name)
-  console.log(message)
-  console.log(email)
-  console.log(phone)
-  console.log(tenhoLote)
-  console.log(melhorarlayout)
-  console.log(regularizar)
-  console.log(m2Lote)
-  console.log(localizacaoLote)
-  console.log(mudarLayout)
-  console.log(localizacaoLayout)
-  console.log(localizacaoRegularizar)
-  console.log(construido)
-  console.log(qntinvestir)
-  console.log(outInfo)
+      console.log("Email enviado com sucesso!", data);
+      setFormData({ ...formData, ...data }); // Atualiza os valores do formulário após o envio
+    } catch (error) {
+      console.error("Erro ao enviar o email:", error);
+    }
+  };
   return (
     <Contact>
-
       <FormContainer>
         <HeaderForm>
           {/* <h2>FALE CONOSCO &nbsp;           
           </h2> */}
         </HeaderForm>
-        <form onSubmit={handleSubmit(handleSendEmail)}>
+        <form onSubmit={handleSubmit(onSubmit)}>
 
           <p>Preencha esse formulário a baixo para podermos te conhecer melhor.</p>
           <br />
@@ -181,8 +120,13 @@ export const FormArq = () => {
               type="text"
               autoComplete="given-name"
               placeholder="Digite seu nome"
-              onChange={(event) => setName(event.target.value)}
-              value={name}
+              onChange={(event) => {
+                setFormData(prevFormData => ({
+                  ...prevFormData,
+                  name: event.target.value
+                }))
+              }}
+              value={formData.name}
               required
             />
           </Div>
@@ -197,8 +141,13 @@ export const FormArq = () => {
               type="text"
               autoComplete="email"
               placeholder="Digite seu email"
-              onChange={(event) => setEmail(event.target.value)}
-              value={email}
+              onChange={(event) => {
+                setFormData(prevFormData => ({
+                  ...prevFormData,
+                  email: event.target.value
+                }))
+              }}
+              value={formData.email}
               required
             />
           </Div>
@@ -216,8 +165,13 @@ export const FormArq = () => {
               type="text"
               autoComplete="tel"
               placeholder="+55 (00) 00000 - 0000"
-              onChange={(event) => setPhone(event.target.value)}
-              value={phone}
+              onChange={(event) => {
+                setFormData(prevFormData => ({
+                  ...prevFormData,
+                  phone: event.target.value
+                }))
+              }}
+              value={formData.phone}
               required
             />
           </Div>
@@ -231,8 +185,13 @@ export const FormArq = () => {
               {...register('message')}
               placeholder="Sua resposta..."
               autoComplete="off"
-              onChange={(event) => setMessage(event.target.value)}
-              value={message}
+              onChange={(event) => {
+                setFormData(prevFormData => ({
+                  ...prevFormData,
+                  message: event.target.value
+                }))
+              }}
+              value={formData.message}
               required
             />
           </Div>
@@ -245,7 +204,10 @@ export const FormArq = () => {
               <input
                 type="checkbox"
                 {...register('mostrarLote')}
-                onClick={() => setTenhoLote('Tenho um lote e quero começar a construir')}
+                onClick={() => setFormData(prevFormData => ({
+                  ...prevFormData,
+                  localizacaoRegularizar:'Tenho um lote e quero começar a construir'
+                }))}
               />
               Tenho um lote e quero começar a construir
             </LabelChexbox>
@@ -266,9 +228,13 @@ export const FormArq = () => {
                     type="text"
                     autoComplete="given-m2Lote"
                     placeholder="(m²)..."
-                    onChange={(event) => setM2Lote(event.target.value)}
-                    value={m2Lote}
-                    required
+                    onChange={(event) => {
+                      setFormData(prevFormData => ({
+                        ...prevFormData,
+                        m2Lote: event.target.value
+                      }))
+                    }}
+                    value={formData.m2Lote}
                   />
 
                 </Div>
@@ -281,9 +247,13 @@ export const FormArq = () => {
                     {...register('localizacaoLote')}
                     placeholder="Sua resposta..."
                     autoComplete="off"
-                    onChange={(event) => setLocalizacaoLote(event.target.value)}
-                    value={localizacaoLote}
-                    required
+                    onChange={(event) => {
+                      setFormData(prevFormData => ({
+                        ...prevFormData,
+                        localizacaoLote: event.target.value
+                      }))
+                    }}
+                    value={formData.localizacaoLote}
                   />
                 </Div>
               </Div>
@@ -295,7 +265,10 @@ export const FormArq = () => {
               <input
                 type="checkbox"
                 {...register('mostrarDesign')}
-                onClick={() => setMelhorarLayout('Melhorar o layout da minha casa')}
+                onClick={() => setFormData(prevFormData => ({
+                  ...prevFormData,
+                  localizacaoRegularizar: 'Melhorar o layout da minha casa'
+                }))}
               />
               Melhorar o layout da minha casa
             </LabelChexbox>
@@ -311,8 +284,13 @@ export const FormArq = () => {
                     type="text"
                     autoComplete="off"
                     placeholder="Digite aqui..."
-                    onChange={(event) => setMudarLayout(event.target.value)}
-                    value={mudarLayout}
+                    onChange={(event) => {
+                      setFormData(prevFormData => ({
+                        ...prevFormData,
+                        mudarLayout: event.target.value
+                      }))
+                    }}
+                    value={formData.mudarLayout}
                     required
                   />
 
@@ -326,8 +304,13 @@ export const FormArq = () => {
                     {...register('qntinvestir')}
                     placeholder="Sua resposta..."
                     autoComplete="off"
-                    onChange={(event) => setLocalizacaoLayout(event.target.value)}
-                    value={localizacaoLayout}
+                    onChange={(event) => {
+                      setFormData(prevFormData => ({
+                        ...prevFormData,
+                        localizacaoLayout: event.target.value
+                      }))
+                    }}
+                    value={formData.localizacaoLayout}
                     required
                   />
                 </Div>
@@ -341,7 +324,10 @@ export const FormArq = () => {
               <input
                 type="checkbox"
                 {...register('mostrarRegularizar')}
-                onClick={() => setRegularizar('Regularizar imóvel na Prefeitura')}
+                onClick={() => setFormData(prevFormData => ({
+                  ...prevFormData,
+                  localizacaoRegularizar: 'Regularizar imóvel na Prefeitura'
+                }))}
               />
               Regularizar imóvel na Prefeitura:
             </LabelChexbox>
@@ -356,8 +342,13 @@ export const FormArq = () => {
                     {...register('localizacaoRegularizar')}
                     placeholder="Sua resposta..."
                     autoComplete="off"
-                    onChange={(event) => setLocalizacaoRegularizar(event.target.value)}
-                    value={localizacaoRegularizar}
+                    onChange={(event) => {
+                      setFormData(prevFormData => ({
+                        ...prevFormData,
+                        localizacaoRegularizar: event.target.value
+                      }))
+                    }}
+                    value={formData.localizacaoRegularizar}
                     required
                   />
                 </Div>
@@ -370,8 +361,13 @@ export const FormArq = () => {
                     {...register('construido')}
                     placeholder="Sua resposta..."
                     autoComplete="off"
-                    onChange={(event) => setConstruido(event.target.value)}
-                    value={construido}
+                    onChange={(event) => {
+                      setFormData(prevFormData => ({
+                        ...prevFormData,
+                        construido: event.target.value
+                      }))
+                    }}
+                    value={formData.construido}
                     required
                   />
                 </Div>
@@ -391,8 +387,13 @@ export const FormArq = () => {
               {...register('qntinvestir')}
               placeholder="Sua resposta..."
               autoComplete="off"
-              onChange={(event) => setQntinvestir(event.target.value)}
-              value={qntinvestir}
+              onChange={(event) => {
+                setFormData(prevFormData => ({
+                  ...prevFormData,
+                  qntinvestir: event.target.value
+                }))
+              }}
+              value={formData.qntinvestir}
               required
             />
           </Div>
@@ -406,8 +407,13 @@ export const FormArq = () => {
               {...register('outInfo')}
               placeholder="Sua resposta..."
               autoComplete="off"
-              onChange={(event) => setOutInfo(event.target.value)}
-              value={outInfo}
+              onChange={(event) => {
+                setFormData(prevFormData => ({
+                  ...prevFormData,
+                  outInfo: event.target.value
+                }))
+              }}
+              value={formData.outInfo}
               required
             />
           </Div>
