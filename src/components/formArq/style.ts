@@ -155,7 +155,7 @@ export const FormContainer = styled.section`
     margin-bottom: 14px;
     border-radius: 8px;
     padding: 8px;
-    height: 40px;
+    height: 100px;
     resize: none;
     border: 1px solid ${props => props.theme["gray-400"]};
   }
@@ -268,7 +268,7 @@ export const Div = styled.div`
     margin-bottom: 14px;
     border-radius: 8px;
     padding: 8px;
-    height: 50px;
+    height: 150px;
     resize: none;
     border: 1px solid ${props => props.theme["gray-400"]};
   }

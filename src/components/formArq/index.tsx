@@ -1,4 +1,4 @@
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 import { Contact, Div, FormContainer, HeaderForm, LabelChexbox } from './style.ts'
 import { useForm } from 'react-hook-form'
@@ -6,35 +6,69 @@ import * as z from 'zod'
 import { zodResolver } from '@hookform/resolvers/zod'
 
 const formSchema = z.object({
+  // base info
   name: z.string(),
-  subject: z.string(),
   message: z.string(),
   phone: z.string(),
-  email: z.string(),
-  quest1: z.string(),
-  quest2: z.string(),
-  quest3: z.string(),
-  metro: z.string(),
+  email: z.string(),  
+
+  // checkbox Value component pai
+  tenhoLote: z.string(),
+  melhorarLayout: z.string(),
+  regularizar: z.string(),
+
+  // checkbox Value component filho Tenho Lote
+  m2Lote: z.string(),
+  localizacaoLote: z.string(),
+
+  // checkbox Value component filho melhorar Layout
+  mudarLayout: z.string(),
+  localizacaoLayout: z.string(),
+
+  // checkbox Value component filho Regularizar Prefeitura
+  localizacaoRegularizar: z.string(),
+  construido: z.string(),
+
+  //outras informacoes
+  qntinvestir: z.string(),
+  outInfo: z.string(),
+
+  // watch's mostrar checkbox
   mostrarLote: z.string(),
   mostrarDesign: z.string(),
   mostrarRegularizar: z.string(),
-  campoCondicional: z.string(),
+
 })
 
 type FormInputs = z.infer<typeof formSchema>
 
 
 export const FormArq = () => {
+  // base info
   const [name, setName] = useState("");
-  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [phone, setPhone] = useState("");
   const [email, setEmail] = useState("");
-  const [quest1, setQuest1] = useState("");
-  const [quest2, setQuest2] = useState("");
-  const [quest3, setQuest3] = useState("");
+  const [qntinvestir, setQntinvestir] = useState("");
+  const [outInfo, setOutInfo] = useState("");
 
-  const [metro, setMetro] = useState('');
+
+  // checkbox Value component pai
+  const [tenhoLote, setTenhoLote] = useState('');
+  const [melhorarlayout, setMelhorarLayout] = useState('');
+  const [regularizar, setRegularizar] = useState('')
+
+  // checkbox Value component filho Tenho Lote
+  const [m2Lote, setM2Lote] = useState('');
+  const [localizacaoLote, setLocalizacaoLote] = useState("");
+
+  // checkbox Value component filho melhorar Layout
+  const [mudarLayout, setMudarLayout] = useState('');
+  const [localizacaoLayout, setLocalizacaoLayout] = useState('')
+
+  // checkbox Value component filho Regularizar Prefeitura
+  const [localizacaoRegularizar, setLocalizacaoRegularizar] = useState('')
+  const [construido, setConstruido] = useState('')
 
   const {
     register,
@@ -49,46 +83,80 @@ export const FormArq = () => {
   const mostrarDesign = watch('mostrarDesign'); // Obtém o valor do campo 'mostrarCampo'
   const mostrarRegularizar = watch('mostrarRegularizar');
 
-  async function handleSendEmail({ name, subject, message, email, phone, quest1, quest2, quest3, metro }: FormInputs) {
+  async function handleSendEmail({ name, message, email, phone, qntinvestir, outInfo, tenhoLote, melhorarLayout, regularizar, m2Lote, localizacaoLote, mudarLayout, localizacaoLayout, localizacaoRegularizar, construido }: FormInputs) {
 
     const templateParams = {
       name,
-      subject,
       message,
       email,
       phone,
-      quest1,
-      quest2,
-      quest3,
-      metro
+
+      tenhoLote,
+      melhorarLayout,
+      regularizar,
+
+      m2Lote,
+      localizacaoLote,
+
+      mudarLayout,
+      localizacaoLayout,
+
+      localizacaoRegularizar,
+      construido,
+
+      qntinvestir,
+      outInfo,
     };
-    console.log(templateParams)
+
 
     await emailjs
       .send(
         "service_b8f2thd", //service ID
         "template_3qa2ark", //template ID
-        templateParams,
+        templateParams, // templateParams
         "jzGM5Ta2MzRQSr_UV" //Public Key
       )
       .then(
         (response) => {
           console.log("email enviado", response.status, response.text);
           setName("");
-          setSubject("");
           setMessage("");
           setPhone("");
           setEmail("");
-          setQuest1("");
-          setQuest2("");
-          setQuest3("");
+
+          setTenhoLote("");
+          setMelhorarLayout('');
+          setRegularizar("");
+
+          setM2Lote(''),
+          setLocalizacaoLote("");
+
+          setMudarLayout(''),
+          setLocalizacaoLayout('')
+
+          setQntinvestir("");
+          setOutInfo("");
         },
 
       ).catch((err) => {
         console.log("erro", err);
       });
   }
-
+  console.log(name)
+  console.log(message)
+  console.log(email)
+  console.log(phone)
+  console.log(tenhoLote)
+  console.log(melhorarlayout)
+  console.log(regularizar)
+  console.log(m2Lote)
+  console.log(localizacaoLote)
+  console.log(mudarLayout)
+  console.log(localizacaoLayout)
+  console.log(localizacaoRegularizar)
+  console.log(construido)
+  console.log(qntinvestir)
+  console.log(outInfo)
   return (
     <Contact>
 
@@ -102,6 +170,7 @@ export const FormArq = () => {
           <p>Preencha esse formulário a baixo para podermos te conhecer melhor.</p>
           <br />
 
+          {/* //funcional */}
           <Div>
             <label htmlFor="fname">
               Qual o seu nome ?
@@ -134,6 +203,8 @@ export const FormArq = () => {
             />
           </Div>
 
+
+
           <Div>
             <label className="label" htmlFor="fphone">
               Qual o seu telefone?
@@ -165,58 +236,53 @@ export const FormArq = () => {
               required
             />
           </Div>
+          {/* //funcional */}
 
+
+          {/* CHECKBOX */}
           <Div>
             <LabelChexbox>
               <input
                 type="checkbox"
                 {...register('mostrarLote')}
+                onClick={() => setTenhoLote('Tenho um lote e quero começar a construir')}
               />
               Tenho um lote e quero começar a construir
             </LabelChexbox>
             {mostrarLote && (
               <Div>
                 <Div>
-                  <label className="label" htmlFor="fmetro">
+                  <input
+                    type="hidden"
+                    value='Tenho um lote e quero começar a construir'
+                    {...register('tenhoLote')}
+                  />
+                  <label className="label" htmlFor="m2Lote">
                     Metro Quadrado (m²):
                   </label>
                   <input
-                    {...register('metro')}
-                    id="fmetro"
+                    {...register('m2Lote')}
+                    id="m2Lote"
                     type="text"
-                    autoComplete="given-metro"
-                    placeholder="Digite seu nome"
-                    onChange={(event) => setMetro(event.target.value)}
-                    value={metro}
+                    autoComplete="given-m2Lote"
+                    placeholder="(m²)..."
+                    onChange={(event) => setM2Lote(event.target.value)}
+                    value={m2Lote}
                     required
                   />
 
                 </Div>
                 <Div>
-                  <label className="label" htmlFor="quest1">
+                  <label className="label" htmlFor="qntinvestir">
                     Localização do imóvel:
                   </label>
                   <input
-                    id="quest1"
-                    {...register('quest1')}
+                    id="localizacaoLote"
+                    {...register('localizacaoLote')}
                     placeholder="Sua resposta..."
                     autoComplete="off"
-                    onChange={(event) => setQuest1(event.target.value)}
-                    value={quest1}
-                    required
-                  />
-                </Div>
-                <Div>
-                  <label className="label" htmlFor="quest2">
-                    Outras informações:
-                  </label>
-                  <input
-                    id="quest2"
-                    {...register('quest2')}
-                    placeholder="Sua resposta..."
-                    autoComplete="off"
-                    onChange={(event) => setQuest2(event.target.value)}
-                    value={quest2}
+                    onChange={(event) => setLocalizacaoLote(event.target.value)}
+                    value={localizacaoLote}
                     required
                   />
                 </Div>
@@ -229,47 +295,43 @@ export const FormArq = () => {
               <input
                 type="checkbox"
                 {...register('mostrarDesign')}
+                onClick={() => setMelhorarLayout('Melhorar o layout da minha casa')}
               />
               Melhorar o layout da minha casa
             </LabelChexbox>
             {mostrarDesign && (
               <Div>
                 <Div>
-                  <label>
+                  <label className="label" htmlFor="layout">
                     Mudar o layout:
-                    <input type="text" {...register('campoCondicional')} />
                   </label>
+                  <input
+                    {...register('mudarLayout')}
+                    id="mudarLayout"
+                    type="text"
+                    autoComplete="off"
+                    placeholder="Digite aqui..."
+                    onChange={(event) => setMudarLayout(event.target.value)}
+                    value={mudarLayout}
+                    required
+                  />
+
                 </Div>
                 <Div>
-                  <label htmlFor="fname">
-                    Ampliar:
-                    <input
-                      {...register('name')}
-                      id="fname"
-                      type="text"
-                      autoComplete="given-name"
-                      placeholder="Digite seu nome"
-                      onChange={(event) => setName(event.target.value)}
-                      value={name}
-                      required
-                    />
-                  </label>
-                </Div>
-                <Div>
-                  <label htmlFor="fname">
+                  <label className="label" htmlFor="qntinvestir">
                     Localização do imóvel:
-                    <input
-                      {...register('name')}
-                      id="fname"
-                      type="text"
-                      autoComplete="given-name"
-                      placeholder="Digite seu nome"
-                      onChange={(event) => setName(event.target.value)}
-                      value={name}
-                      required
-                    />
                   </label>
+                  <input
+                    id="qntinvestir"
+                    {...register('qntinvestir')}
+                    placeholder="Sua resposta..."
+                    autoComplete="off"
+                    onChange={(event) => setLocalizacaoLayout(event.target.value)}
+                    value={localizacaoLayout}
+                    required
+                  />
                 </Div>
+
               </Div>
             )}
           </Div>
@@ -279,98 +341,82 @@ export const FormArq = () => {
               <input
                 type="checkbox"
                 {...register('mostrarRegularizar')}
+                onClick={() => setRegularizar('Regularizar imóvel na Prefeitura')}
               />
-              Regularizar imóvel na prefeitura
+              Regularizar imóvel na Prefeitura:
             </LabelChexbox>
             {mostrarRegularizar && (
-              <div>
-                <label>
-                  Campo Condicional:
-                  <input type="text" {...register('campoCondicional')} />
-                </label>
-                <label htmlFor="fname">
-                  Localização do imóvel:
+              <Div>
+                <Div>
+                  <label className="label" htmlFor="qntinvestir">
+                    Localização do imóvel:
+                  </label>
                   <input
-                    {...register('name')}
-                    id="fname"
-                    type="text"
-                    autoComplete="given-name"
-                    placeholder="Digite seu nome"
-                    onChange={(event) => setName(event.target.value)}
-                    value={name}
+                    id="qntinvestir"
+                    {...register('localizacaoRegularizar')}
+                    placeholder="Sua resposta..."
+                    autoComplete="off"
+                    onChange={(event) => setLocalizacaoRegularizar(event.target.value)}
+                    value={localizacaoRegularizar}
                     required
                   />
-                </label>
-                <label htmlFor="fname">
-                  Possue alguma construção:
+                </Div>
+                <Div>
+                  <label className="label" htmlFor="construido">
+                    Possui alguma construção:
+                  </label>
                   <input
-                    {...register('name')}
-                    id="fname"
-                    type="text"
-                    autoComplete="given-name"
-                    placeholder="Digite seu nome"
-                    onChange={(event) => setName(event.target.value)}
-                    value={name}
+                    id="construido"
+                    {...register('construido')}
+                    placeholder="Sua resposta..."
+                    autoComplete="off"
+                    onChange={(event) => setConstruido(event.target.value)}
+                    value={construido}
                     required
                   />
-                </label>
-              </div>
+                </Div>
+
+              </Div>
             )}
           </Div>
 
 
-
-
+          {/* //funcional */}
           <Div>
-            <label className="label" htmlFor="quest2">
-              Tem algum item de valor sentimental para colocar no seu ambiente?
+            <label className="label" htmlFor="qntinvestir">
+              Quanto pretende investir?
             </label>
             <input
-              id="quest2"
-              {...register('quest2')}
+              id="qntinvestir"
+              {...register('qntinvestir')}
               placeholder="Sua resposta..."
               autoComplete="off"
-              onChange={(event) => setQuest2(event.target.value)}
-              value={quest2}
+              onChange={(event) => setQntinvestir(event.target.value)}
+              value={qntinvestir}
               required
             />
           </Div>
 
           <Div>
-            <label className="label" htmlFor="quest3">
-              Deseja reaproveitar algum objeto/móvel?
+            <label className="label" htmlFor="outInfo">
+              Outras informações:
             </label>
-            <input
-              id="quest3"
-              {...register('quest3')}
+            <textarea
+              id="outInfo"
+              {...register('outInfo')}
               placeholder="Sua resposta..."
               autoComplete="off"
-              onChange={(event) => setQuest3(event.target.value)}
-              value={quest3}
+              onChange={(event) => setOutInfo(event.target.value)}
+              value={outInfo}
               required
             />
           </Div>
-
+          {/* //funcional */}
 
           <input className="button" disabled={isSubmitting} type="submit" value="Enviar" />
         </form>
       </FormContainer>
     </Contact>
   );
-  // return ( FORMAPP.COM
-  //   <Contact>
 
-  //     <FormContainer>
-  //     <Iframe
-  //       url="https://respondto.forms.app/dawnbreakerph/seusite-form"
-  //       width="100%"
-  //       height="4500px" // Ajuste a altura conforme necessário
-  //       id="meuFormulario"
-  //       className="meuFormulario"
-  //       display="initial"
-  //       position="relative"
-  //     />
-  //     </FormContainer>
-  //   </Contact>
-  // );
 };
