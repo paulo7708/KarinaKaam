@@ -1,4 +1,5 @@
-import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import { HashLink as Link } from 'react-router-hash-link';
 import { StyledSection } from './section1_2';
 import Slide from 'react-reveal/Slide'
 
@@ -30,7 +31,7 @@ export function Section1_2({ btnText, img, text, title, subTitle, id }: Section1
         </Slide>
         <Slide top duration={2500} delay={200}>
           <article>
-            <NavLink to={"/faleconosco"}>{btnText}</NavLink>
+            <Nav.Link as={Link} to={"/faleconosco"}>{btnText}</Nav.Link>
           </article>
         </Slide>
       </div>

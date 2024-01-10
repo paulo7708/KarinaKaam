@@ -8,18 +8,10 @@ import { Section1_2 } from "./section1_2/index";
 import image1 from '../../assets/1_3_1.png'
 import image2 from '../../assets/1_3_2.png'
 import image3 from '../../assets/1_3_3.png'
-import image5 from '../../assets/1_3_5.jpg'
 import Fac from '../accordion'
 
 import { Section1_1 } from "./section1_1";
 
-import svg1 from '../../assets/svg/svg1.png'
-import svg2 from '../../assets/svg/svg2.png'
-import svg3 from '../../assets/svg/svg3.png'
-import svg4 from '../../assets/svg/svg4.png'
-import svg5 from '../../assets/svg/svg5.png'
-import svg6 from '../../assets/svg/svg6.png'
-import { Cards } from '../Cards'
 import { CompPortfolio } from "../compPortfolio";
 import { Servicos } from "../servicos";
 import { CardSvg } from "../cardSvg";

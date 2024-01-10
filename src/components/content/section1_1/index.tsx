@@ -1,4 +1,5 @@
-import { NavLink } from 'react-router-dom';
+import Nav from 'react-bootstrap/Nav';
+import { HashLink as Link } from 'react-router-hash-link';
 import Fade from 'react-reveal/Fade'
 import Slide from 'react-reveal/Slide'
 import { VideoSection } from './section1_1';
@@ -34,7 +35,7 @@ export function Section1_1({ btnText, text, title, subTitle, id, image }: Sectio
         </Slide>
         <Fade bottom duration={2500} delay={200}>
           <article>
-            <NavLink to={"/faleconosco"}>{btnText}</NavLink>
+            <Nav.Link to={"/faleconosco"} as={Link}>{btnText}</Nav.Link>
           </article>
         </Fade>
       </div>
