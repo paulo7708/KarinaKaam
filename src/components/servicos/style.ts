@@ -13,7 +13,7 @@ export const PortStyle = styled.div`
   width: 100%;
   max-width: 1120px;
   margin: 1rem auto 0;
-  padding: 0 1.5rem 7rem 1.5rem;
+  padding: 0 1.5rem 2rem 1.5rem;
 
   @media (max-width: 800px) {
     h2{
@@ -32,6 +32,9 @@ export const PortStyle = styled.div`
       font-weight: 600;
       text-shadow: 1px 0px 0px #4B4B4D;
       text-align: justify;
+      @media (max-width: 800px) {
+        font-size: 1rem
+      } 
   }
 
   .title{
@@ -39,6 +42,9 @@ export const PortStyle = styled.div`
     font-size:1.5rem;
     border:none;
     color:#E1E1E6;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 
   span{
@@ -47,6 +53,7 @@ export const PortStyle = styled.div`
     color: #E1E1E6;
     font-weight: 600;
     text-shadow: 1px 0px 0px #E1E1E6;
+        
   }
 
   h2{
@@ -54,10 +61,16 @@ export const PortStyle = styled.div`
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     text-align: center;
+    @media (max-width: 800px) {
+      padding-top: 1rem;
+    }    
   }
   strong{
     font-size: 1.4rem;
     color: ${(props) => props.theme["gray-300"]};
+    @media (max-width: 800px) {
+        font-size: 1rem
+      }
   }
 
   a{
@@ -74,13 +87,9 @@ export const PortBtn = styled.a`
     color: ${(props) => props.theme["gray-300"]};
     padding: 0.8rem 5rem;
     transition: 0.2s;
-    @media (max-width: 800px){
-      padding: 0.8rem 2rem;
-
-        p{      
-        font-size: 1.1rem;      
-      };
-    }
+    @media (max-width: 800px) {
+        font-size: 1rem
+      }
 
     &:hover {
       scale: 1.04;
@@ -122,6 +131,9 @@ export const Card = styled.div`
     padding: 1rem 2rem;
     p {
       text-align: center;
+      @media (max-width: 800px) {
+        font-size: 0.85rem
+      }
     }
     
     @media(max-width:900px){

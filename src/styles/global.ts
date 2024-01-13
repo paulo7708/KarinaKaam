@@ -55,7 +55,8 @@ export const GlobalStyle = createGlobalStyle`
   }
   p {
     font-size: 1.3rem;
-    color: ${(props) => props.theme["text"]} 
+    color: ${(props) => props.theme["text"]}
+    
   }
   
 

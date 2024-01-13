@@ -29,6 +29,9 @@ export const PortStyle = styled.div`
       color: ${(props) => props.theme["gray-300"]};
       font-weight: 600;
       text-shadow: 1px 0px 0px #4B4B4D;
+      @media (max-width: 800px) {
+        display: none;
+      }
   }
 
   h2{

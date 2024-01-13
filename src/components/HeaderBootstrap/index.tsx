@@ -15,7 +15,7 @@ export const HeaderBootstrap = () => {
   window.addEventListener("scroll", function () {
     const header = document.querySelector('header')
     //@ts-ignore
-    header.classList.toggle('rolagem', window.scrollY )
+    header.classList.toggle('rolagem', window.scrollY)
     // if(scrollY === 0 ) {
     //   setDarkLogo(false)
     // } else {
@@ -32,7 +32,7 @@ export const HeaderBootstrap = () => {
             to={"/#Home"}
           >
             {/* <img className='img' src={ darkLogo ? logo : logoDark } alt="" /> */}
-            <img className='img' src={ logoDark } alt="" />
+            <img className='img' src={logoDark} alt="" />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -43,7 +43,7 @@ export const HeaderBootstrap = () => {
               <Nav.Link eventKey="1" id='nav-links' className='ms-auto me-auto'
                 as={Link}
                 to={"/#Home"}
-                >
+              >
                 Home
               </Nav.Link>
 
@@ -65,10 +65,10 @@ export const HeaderBootstrap = () => {
               <Nav.Link eventKey="5" type="button" id='btn' className="nav-links ms-auto me-auto"
                 as={Link}
                 to={"/faleconosco"}
-              ><Users className='whatsNav' size={28} color={'#FFF'} weight="fill"/>Orçamento
+              ><Users className='whatsNav' size={28} color={'#FFF'} weight="fill" />Orçamento
               </Nav.Link>
 
-              <a className='whatsNav' href="https://wa.me/5511920181537" target="_blank"><WhatsappLogo size={33} color="#dab4d1"/></a>
+              <a className='whatsNav' href="https://wa.me/5514991761410" target="_blank"><WhatsappLogo size={33} color="#dab4d1" /></a>
             </Nav>
           </Navbar.Collapse>
         </Container>

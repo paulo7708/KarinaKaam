@@ -49,21 +49,35 @@
   font-size: 1.2rem;
   font-weight: bold;
   text-align: left;
+  @media (max-width: 450px){
+    text-align: center;
+  }
 }
 
 .carText h3 {
   font-size: 2rem;
   font-weight: bold;
   text-align: left;
+
+  background-image: -webkit-linear-gradient(50deg, white, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+  @media (max-width: 450px){
+    font-size: 1.3rem;
+    text-align: center;
+    .logo{
+      
+    }
+  }
 }
 
 .desfoque {
-  text-shadow: 0px 1px 4px black;
   display: flex;
   align-items: start;
   justify-content: center;
   flex-direction: column;
-  text-align:justify;
+  text-align:left;
   gap:0.5rem;
 
   @media (min-width: 1441px) {
@@ -84,6 +98,9 @@
       display: none;
     }
   }
+  @media (max-width: 450px){
+    padding-bottom:2rem;
+  }
 }
 
 .btn {
@@ -103,6 +120,9 @@
   background-color: #transparent;
   opacity: 0.9;
   transition: all 0.2s ease-in-out;
+  @media (max-width: 450px){
+    display:none;
+  }
 }
 
 .btn:hover {

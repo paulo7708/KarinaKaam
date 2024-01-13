@@ -31,10 +31,10 @@ export const FormDesign = () => {
     const templateParams = { name, email, phone, message, subject, qntinvestir, outInfo, localizacaoLote, oqespera, profissao, jaexiste, ambientes, pqgostaria, qlestilo, seguimento };
 
     await emailjs.send(
-      "service_t45tnwj", //service ID
-      "template_xnz4r2i", //template ID
+      "service_68ypfh7", //service ID
+      "template_ecat886", //template ID
       templateParams, // templateParams
-      "XEf05fqwepbi-p7pU" //Public Key
+      "sFf2gEu-ZHb36_Dyi" //Public Key
     ).then(
       (response) => {
         console.log("email enviado", response.status, response.text);

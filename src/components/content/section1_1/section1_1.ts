@@ -7,8 +7,7 @@ export const VideoSection = styled.div`
   display: flex;
   width: 100%;
   background-color: transparent;
-  
-  
+
 
   @media (min-width: 1500px) {
     padding: 0rem 0rem 0rem 4rem ;

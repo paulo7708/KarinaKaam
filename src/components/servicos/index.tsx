@@ -1,4 +1,3 @@
-import svg1 from '../../assets/svg/svg1.png'
 import { Card, ContainerCard, PortStyle } from './style'
 
 interface Servicos {

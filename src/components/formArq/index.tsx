@@ -22,10 +22,10 @@ export const FormArq = () => {
     const templateParams = { name, email, phone, message, subject, qntinvestir, outInfo, m2Lote, localizacaoLote, mudarLayout, construido };
 
     await emailjs.send(
-      "service_t45tnwj", //service ID
-      "template_997etxh", //template ID
+      "service_68ypfh7", //service ID
+      "template_ecat886", //template ID
       templateParams, // templateParams
-      "XEf05fqwepbi-p7pU" //Public Key
+      "sFf2gEu-ZHb36_Dyi" //Public Key
     ).then(
       (response) => {
         console.log("email enviado", response.status, response.text);

@@ -5,7 +5,6 @@ import { HeaderBootstrap as Header } from "../../components/HeaderBootstrap";
 import { Footer } from "../../components/Footer/Footer";
 import { GlobalStyle } from "../../styles/global";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Form } from "../../components/formArq";
 
 
 export const Default = () => {

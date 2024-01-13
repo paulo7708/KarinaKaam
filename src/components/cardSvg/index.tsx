@@ -1,6 +1,5 @@
-import svg1 from '../../assets/monick-fiuza-arquitetura-e-design-the-house-osasco-10.jpg'
 import { Card, ContainerCard, PortBtn, PortStyle } from './style'
-import { PortComercial, PortResidencial } from '../PrePortfolio/contentPort'
+import { PortResidencial } from '../PrePortfolio/contentPort'
 import { NavLink } from 'react-router-dom'
 
 export function CardSvg() {

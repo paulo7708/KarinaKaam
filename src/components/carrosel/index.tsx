@@ -26,13 +26,7 @@ function CarroselBootstrap() {
             <Nav.Link type="button" className="nav-links ms-auto me-auto btn"
               as={Link}
               to={"/faleconosco"}
-            >ARQUITETURA
-            </Nav.Link>
-
-            <Nav.Link type="button" className="nav-links ms-auto me-auto btn"
-              as={Link}
-              to={"/faleconosco"}
-            >DESIGN DE INTERIORES
+            >Saiba Mais
             </Nav.Link>
           </Fade>
 
@@ -46,9 +40,9 @@ function CarroselBootstrap() {
           alt="Second slide"
         />
 
-        <Carousel.Caption className='desfoque'>
+        <Carousel.Caption className='desfoque carText'>
           <Fade top duration={2000} delay={500}>
-            <h3>Design de interiores transformando um simples ambiente em um local confortável</h3>
+            <h3>Transformando um simples ambiente em um local confortável</h3>
             <p>Relacionamento e cuidado, tão importantes quanto o resultado.</p>
             <Nav.Link type="button" className="btn nav-links ms-auto me-auto"
               as={Link}
@@ -66,7 +60,7 @@ function CarroselBootstrap() {
           alt="Third slide"
         />
 
-        <Carousel.Caption className='desfoque'>
+        <Carousel.Caption className='desfoque carText'>
           <Fade top duration={2000} delay={500}>
             <h3>Arquitetura e Urbanismo formado</h3>
             <p>
