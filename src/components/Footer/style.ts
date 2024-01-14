@@ -68,6 +68,9 @@ export const RowSection = styled.section`
 
     img {
       width: 18rem;
+      @media(max-width:450px){
+        width: 17rem;
+      }
     }
     a {
       text-decoration: none;
