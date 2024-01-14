@@ -43,6 +43,9 @@ span{
   color: #E1E1E6;
   font-weight: 600;
   text-shadow: 1px 0px 0px #E1E1E6;
+  @media (max-width: 450px){
+    font-size: 1.2rem;
+  }
 }
 
 .acc {
@@ -55,7 +58,12 @@ span{
   font-size: 1.2rem;
 }
 
-
+.paragrafoFinal{
+  @media(max-width:450px){
+    text-align:justify;
+    font-size: 1rem;
+  }
+}
 
 .accordion-button {
   background-color: transparent !important;
@@ -72,6 +80,5 @@ span{
 }
 
 .accordion-button:after { 
-  
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
 }

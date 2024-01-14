@@ -101,7 +101,10 @@ export const StyledSection = styled.div`
     color: #E1E1E6;
     font-weight: 600;
     text-shadow: 1px 0px 0px #E1E1E6;
-  }
+    @media(max-width:450px){
+          display: none;
+        }
+    }
     h3 {
       font-family: Eras;
       color: ${props => props.theme['gray-400']};
@@ -112,6 +115,9 @@ export const StyledSection = styled.div`
       font-weight: bold;
       opacity: 0.9;
       text-align: justify;
+      @media(max-width:450px){
+        font-size: 0.8rem;
+      }
     }
 
     a{

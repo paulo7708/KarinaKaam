@@ -32,7 +32,7 @@ export function CompPortfolio() {
         </ContainerCard>
         <NavLink to='/preportfolio'>
           <PortBtn>
-            Clique aqui para ver mais projetos
+            <span>Veja mais projetos</span>
           </PortBtn>
         </NavLink>
 

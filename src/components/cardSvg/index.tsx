@@ -33,7 +33,7 @@ export function CardSvg() {
           <Card>
             <NavLink to='/faleconosco'>
               <img className='img4' src={PortResidencial[7].img} />
-              <h1>Atendimento Pós-Projeto</h1>
+              <h1>Pós Atendimento</h1>
               <p>Contribui durante o andamento da construção, fornecendo um cronograma, supervisionando, realizando visitas estratégicas ao local da obra.</p>
             </NavLink>
           </Card>
@@ -43,7 +43,7 @@ export function CardSvg() {
 
 
         <NavLink to='/faleconosco'>
-          <PortBtn>Entre em contato</PortBtn>
+          <PortBtn><span>Entre em contato</span></PortBtn>
         </NavLink>
 
 

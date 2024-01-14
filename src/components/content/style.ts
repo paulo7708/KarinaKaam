@@ -18,10 +18,10 @@ export const BodyContent = styled.section`
 `
 export const ImgIcon = styled.div`
   @media (min-width: 800px) {
-    margin: 3rem;
+    margin: 2rem;
   }
-  @media (max-width: 800px) {    
-    margin: 3rem;
+  @media (max-width: 450px) {    
+    margin: 1rem;
   
   }
 

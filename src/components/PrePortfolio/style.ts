@@ -95,6 +95,11 @@ export const Card = styled.div`
           width: 328px;
           height: 182px;
         }
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-left: 1rem;
+        }
       }
 
       &:hover {

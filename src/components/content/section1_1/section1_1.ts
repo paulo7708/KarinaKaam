@@ -110,11 +110,17 @@ export const VideoSection = styled.div`
         font-size: 1.5rem;        
       }
     }
-    span{
-    }
+    
     h3 {
       font-family: Eras;
       color: ${props => props.theme['gray-400']};
+      
+    }
+    
+    span{
+      @media(max-width:450px){
+        display: none;
+      }
     }
 
     p{
@@ -122,6 +128,9 @@ export const VideoSection = styled.div`
       font-weight: bold;
       opacity: 0.9;
       text-align: justify;
+      @media(max-width:450px){
+        font-size: 0.8rem;
+      }
     }
 
     a{

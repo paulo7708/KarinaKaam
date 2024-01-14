@@ -36,10 +36,10 @@ function Fac() {
       </Accordion>
 
       <Contato>
-        <p>Caso você tenha alguma dúvida que não foi respondida aqui nessa seção,<br />entre em contato conosco</p>
+        <p className='paragrafoFinal'>Caso você tenha alguma dúvida que não foi respondida aqui nessa seção,<br />entre em contato conosco</p>
 
         <PortBtn href="/faleconosco">
-          Entre em contato
+          <span>Entre em contato</span>
         </PortBtn>
       </Contato>
 

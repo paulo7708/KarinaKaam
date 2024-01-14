@@ -61,6 +61,14 @@ export const PortBtn = styled.a`
         p{      
         font-size: 1.1rem;      
       };
+    @media(max-width: 450px){
+      padding: 0.8rem 2rem;
+        span{      
+          font-size: 1.5rem; 
+      };
+        width: 270px;
+        height: 162px;
+    }
     }
 
     &:hover { 
@@ -107,17 +115,33 @@ export const Card = styled.div`
         box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, transparent -20px 20px, transparent -25px 25px;
         width: 328px;
         height: 172px;
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-left: 0.9rem;
+        }
       }
       .img2{
         box-shadow: #B09987 0px 5px, #D3BAA6 0px 10px, #FFDDBD 0px 15px, transparent 0px 20px, transparent 0px 25px;
         
         width: 328px;
         height: 172px;
+
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+        }
       }
       .img3{
         box-shadow: #B09987 5px 5px, #D3BAA6 10px 10px, #FFDDBD 15px 15px, transparent 20px 20px;
         width: 328px;
         height: 172px;
+
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-right: 0.9rem;
+        }
       }
 
       &:hover {

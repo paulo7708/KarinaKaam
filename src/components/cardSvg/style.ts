@@ -34,7 +34,10 @@ export const PortStyle = styled.div`
   }
   h3{
     color: ${(props) => props.theme["gray-300"]};
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    @media(max-width: 320px){
+      font-size: 1.5rem;
+    }
   }
 
   a{
@@ -54,11 +57,17 @@ export const PortBtn = styled.p`
     transition: all 0.2s ease-in-out;
     @media (max-width: 800px){
       padding: 0.8rem 2rem;
-
-        p{      
+      p{      
         font-size: 1.1rem;      
       };
     }
+    @media (max-width: 450px){
+      padding: 0.7rem 2rem;
+      span{      
+        font-size: 1.2rem;      
+      };
+    }
+    
 
     &:hover { 
       transform: scale(1.1);
@@ -103,7 +112,9 @@ export const Card = styled.div`
       transition: 0.2s;      
       p{
       font-size: 1.1rem;
-        
+        @media(max-width: 320px){
+          font-size: 0.9rem;
+        }
       }
       
 
@@ -111,21 +122,47 @@ export const Card = styled.div`
         box-shadow: #B09987 -5px -5px, #D3BAA6 -10px -10px, #FFDDBD -15px -15px, transparent -20px -20px;
         width: 358px;
         height: 172px;
+
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-left: 1rem;
+        }
       }
       .img2{
         box-shadow: #B09987 5px -5px, #D3BAA6 10px -10px, #FFDDBD 15px -15px, transparent 20px -20px;
         width: 358px;
         height: 172px;
+
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-right: 1rem;
+        }
       }
       .img3{
         box-shadow: #B09987 -5px 5px, #D3BAA6 -10px 10px, #FFDDBD -15px 15px, transparent -20px 20px;
         width: 358px;
         height: 172px;
+
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-left: 0.9rem;
+          margin-bottom: 1rem;
+        }
       }
       .img4{
         box-shadow: #B09987 5px 5px, #D3BAA6 10px 10px, #FFDDBD 15px 15px, transparent 20px 20px;
         width: 358px;
         height: 172px;
+
+        @media(max-width: 320px){
+          width: 270px;
+          height: 162px;
+          margin-right: 0.9rem;
+          margin-bottom: 1rem;
+        }
       }
 
       &:hover {
@@ -138,6 +175,7 @@ export const Card = styled.div`
     h1{
       font-size: 2rem;
       padding-top: 1rem;
+      
     }
 
   
