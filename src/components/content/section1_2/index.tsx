@@ -15,13 +15,13 @@ interface Section1_2 {
 export function Section1_2({ btnText, img, text, title, subTitle, id }: Section1_2) {
   return (
     <StyledSection id={id}>
-      <div>
+      <div className='center'>
         <Slide bottom duration={2000}>
           <h3>{subTitle}</h3>
         </Slide>
         <Slide bottom duration={2000} delay={500}>
           <h1>
-            <span>———</span>&nbsp;&nbsp;{title}
+            <span>———&nbsp;&nbsp;</span>{title}
           </h1>
         </Slide>
         <Slide bottom duration={2500} delay={200}>
@@ -30,7 +30,7 @@ export function Section1_2({ btnText, img, text, title, subTitle, id }: Section1
           </p>
         </Slide>
         <Slide top duration={2500} delay={200}>
-          <article>
+          <article className='center'>
             <Nav.Link as={Link} to={"/faleconosco"}>{btnText}</Nav.Link>
           </article>
         </Slide>

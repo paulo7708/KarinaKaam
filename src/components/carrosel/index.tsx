@@ -42,7 +42,7 @@ function CarroselBootstrap() {
 
         <Carousel.Caption className='desfoque carText'>
           <Fade top duration={2000} delay={500}>
-            <h3>Transformando um simples ambiente em um local confortável</h3>
+            <h3>TRANSFORMANDO AMBIENTES SIMPLES EM LOCAIS CONFORTÁVEIS</h3>
             <p>Relacionamento e cuidado, tão importantes quanto o resultado.</p>
             <Nav.Link type="button" className="btn nav-links ms-auto me-auto"
               as={Link}
@@ -62,7 +62,7 @@ function CarroselBootstrap() {
 
         <Carousel.Caption className='desfoque carText'>
           <Fade top duration={2000} delay={500}>
-            <h3>Arquitetura e Urbanismo formado</h3>
+            <h3>ARQUITETURA E URBANISMO</h3>
             <p>
             Infraestrutura urbana e  desenvolvimento de projetos arquitetônicos.
             </p>

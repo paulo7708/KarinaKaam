@@ -19,13 +19,13 @@ export function Section1_1({ btnText, text, title, subTitle, id, image }: Sectio
     <VideoSection id={id}>
 
       <img src={image} alt="" />
-      <div>
+      <div className='center'>
         <Slide bottom duration={2000}>
           <h3>{subTitle}</h3>
         </Slide>
         <Slide bottom duration={2000} delay={500}>
           <h1>
-            <span>———</span>&nbsp;&nbsp;{title}
+            <span>———&nbsp;&nbsp;</span>{title}
           </h1>
         </Slide>
         <Slide bottom duration={2500} delay={200}>
@@ -34,7 +34,7 @@ export function Section1_1({ btnText, text, title, subTitle, id, image }: Sectio
           </p>
         </Slide>
         <Fade bottom duration={2500} delay={200}>
-          <article>
+          <article className='center'>
             <Nav.Link to={"/faleconosco"} as={Link}>{btnText}</Nav.Link>
           </article>
         </Fade>

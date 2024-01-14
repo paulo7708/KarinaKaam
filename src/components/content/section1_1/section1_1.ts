@@ -92,6 +92,8 @@ export const VideoSection = styled.div`
       
     }
 
+    
+
     h1{ 
       opacity: 0.9;
       font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -164,6 +166,15 @@ export const VideoSection = styled.div`
         width: 8rem;
       }
     }
+  }
+
+  .center{
+    @media(max-width: 450px){
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+      
   }
     /* display: flex;
     flex-direction: column;

@@ -50,6 +50,15 @@ export const StyledSection = styled.div`
       height: 350px;
     }
   }
+
+  .center{
+    @media(max-width: 450px){
+      display: flex;
+      justify-content: center;
+      text-align: center;
+    }
+      
+  }
   
   div{
     display: flex;
