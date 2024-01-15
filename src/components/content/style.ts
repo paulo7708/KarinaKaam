@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 import endSectionBg from "../../assets/endSectionBg.jpg"
-import abstrato from '../../assets/abstrato.png'
 
 export const BodyContent = styled.section`
   display: flex;
@@ -37,9 +36,7 @@ export const Section = styled.section`
   margin: 0 10rem;
   height: 50vh;
 
-  background-image: url(${abstrato});
-  background-repeat: no-repeat;
-  background-size: cover;  
+
 
   img {
     min-width: 35%;
@@ -158,10 +155,6 @@ export const StartSection = styled.section`
   height: 80vh;
   width: 100%;
 
-  background-image: url(${abstrato});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center;
   
 
   

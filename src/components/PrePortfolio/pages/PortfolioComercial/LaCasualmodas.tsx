@@ -1,11 +1,11 @@
 import { StyleContainer } from './style'
 
-import img0 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/00.png'
-import img6 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/01.png'
-import img2 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/02.png'
-import img4 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/04.png'
-import img5 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/05.png'
-import img1 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/06.png'
+import img0 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/00Resultado.png'
+import img6 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/01Resultado.png'
+import img2 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/02Resultado.png'
+import img4 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/04Resultado.png'
+import img5 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/05Resultado.png'
+import img1 from '../../../../assets/Projeto comercial/La Casual modas - loja infantil/06Resultado.png'
 import { CarouselNavigate } from '../carouselNavigate'
 
 const imagens = [img0,img1, img2, img4, img5, img6]
