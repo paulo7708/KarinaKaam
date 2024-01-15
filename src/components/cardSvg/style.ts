@@ -34,7 +34,7 @@ export const PortStyle = styled.div`
   }
   h3{
     color: ${(props) => props.theme["gray-300"]};
-    padding-bottom: 1.5rem;
+    padding: 4rem 0;
     @media(max-width: 320px){
       font-size: 1.5rem;
     }

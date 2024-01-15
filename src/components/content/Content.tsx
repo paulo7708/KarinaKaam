@@ -15,6 +15,7 @@ import { Section1_1 } from "./section1_1";
 import { CompPortfolio } from "../compPortfolio";
 import { Servicos } from "../servicos";
 import { CardSvg } from "../cardSvg";
+import { CnavHome } from "../PrePortfolio/pages/carouselNavigate/CnavHome";
 
 
 
@@ -84,6 +85,7 @@ export const Content = () => {
         />
 
         <CardSvg />
+        <CnavHome />
         <ImgIcon id="fac" />
         <Fac />
 

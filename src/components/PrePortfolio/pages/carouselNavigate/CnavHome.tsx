@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/navigation';
-import './index.css'
+import './style.css'
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
 
 import { NavLink } from 'react-router-dom';
@@ -13,7 +13,7 @@ import { Card, ContainerCard } from './style';
 import { ArrowFatLineRight } from 'phosphor-react';
 
 
-export function CarouselNavigate() {
+export function CnavHome() {
   const gerarNumeroAleatorio = () => {
     const numeroAleatorio = Math.floor(Math.random() * (15 - 5 + 1)) + 5;
     return numeroAleatorio;

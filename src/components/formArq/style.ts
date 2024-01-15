@@ -19,11 +19,10 @@ export const Contact = styled.section`
   
   @media (max-width: 1072px) {
     background-position-x: right;
-    @media (max-width: 1072px) {
     padding-top: 11rem;
-    }    
-
+    
   }
+  
 
   div {
     flex-direction: column;
