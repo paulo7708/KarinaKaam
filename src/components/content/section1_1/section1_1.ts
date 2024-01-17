@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import imgRight from '../../../assets/quadrado1.png'
 
 
 export const VideoSection = styled.div`
@@ -176,23 +175,6 @@ export const VideoSection = styled.div`
     }
       
   }
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 80%;
-    padding: 8rem;
-    gap: 2rem;
-
-    background-image: url(${imgRight});
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position-x: center;
-    
-
-    @media (max-width: 768px) {
-    display: none;
-  }} */
+   
   
 `

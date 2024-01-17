@@ -17,7 +17,7 @@ export const HamburgueriaBetsItapuí = () => {
     <>
       <StyleContainer>
         {imagens.map((imagem) => (
-          <img key={imagem} src={imagem} alt={imagem} />
+          <img loading="lazy" key={imagem} src={imagem} alt={imagem} />
         ))}
         <CarouselNavigate />
       </StyleContainer>

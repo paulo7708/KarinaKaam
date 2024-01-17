@@ -49,7 +49,7 @@ export function CnavHome() {
           <SwiperSlide key={PortRoute[numero + 5 ? numero + 5 : numero - 5].path}>
             <NavLink className='decorationNone' to={PortRoute[numero + 5 ? numero + 5 : numero - 5].path}>
               <Card>
-                <img id='image' src={PortRoute[numero + 5 ? numero + 5 : numero - 5].img} />
+                <img loading="lazy" id='image' src={PortRoute[numero + 5 ? numero + 5 : numero - 5].img} />
                 <h2 className='textSpace h2'>{PortRoute[numero + 5 ? numero + 5 : numero - 5].h1}</h2>
               </Card>
             </NavLink>
@@ -57,7 +57,7 @@ export function CnavHome() {
           <SwiperSlide key={PortRoute[numero - 4 ? numero - 4 : numero + 2].path}>
             <NavLink className='decorationNone' to={PortRoute[numero - 4 ? numero - 4 : numero + 2].path}>
               <Card>
-                <img id='image' src={PortRoute[numero - 4 ? numero - 4 : numero + 2].img} />
+                <img loading="lazy" id='image' src={PortRoute[numero - 4 ? numero - 4 : numero + 2].img} />
                 <h2 className='textSpace h2'>{PortRoute[numero - 4 ? numero - 4 : numero + 2].h1}</h2>
               </Card>
             </NavLink>
@@ -65,7 +65,7 @@ export function CnavHome() {
           <SwiperSlide key={PortRoute[numero - 1 ? numero - 1 : numero + 10].path}>
             <NavLink className='decorationNone' to={PortRoute[numero - 1 ? numero - 1 : numero + 10].path}>
               <Card>
-                <img id='image' src={PortRoute[numero - 1 ? numero - 1 : numero + 10].img} />
+                <img loading="lazy" id='image' src={PortRoute[numero - 1 ? numero - 1 : numero + 10].img} />
                 <h2 className='textSpace h2'>{PortRoute[numero - 1 ? numero - 1 : numero + 10].h1}</h2>
               </Card>
             </NavLink>
@@ -73,16 +73,16 @@ export function CnavHome() {
           <SwiperSlide key={PortRoute[numero + 3 ? numero + 3 : numero - 5].path}>
             <NavLink className='decorationNone' to={PortRoute[numero + 3 ? numero + 3 : numero - 5].path}>
               <Card>
-                <img id='image' src={PortRoute[numero + 3 ? numero + 3 : numero - 5].img} />
+                <img loading="lazy" id='image' src={PortRoute[numero + 3 ? numero + 3 : numero - 5].img} />
                 <h1 className='textSpace h2'>{PortRoute[numero + 3 ? numero + 3 : numero - 5].h1}</h1>
               </Card>
             </NavLink>
           </SwiperSlide>
-          <SwiperSlide key={PortRoute[numero - 1 ? numero - 1 : numero + 10].path}>
-            <NavLink className='decorationNone' to={PortRoute[numero - 1 ? numero - 1 : numero + 10].path}>
+          <SwiperSlide key={PortRoute[numero - 2 ? numero - 2 : numero + 10].path}>
+            <NavLink className='decorationNone' to={PortRoute[numero - 2 ? numero - 2 : numero + 10].path}>
               <Card>
-                <img id='image' src={PortRoute[numero - 1 ? numero - 1 : numero + 10].img} />
-                <h2 className='textSpace h2'>{PortRoute[numero - 1 ? numero - 1 : numero + 10].h1}</h2>
+                <img loading="lazy" id='image' src={PortRoute[numero - 2 ? numero - 2 : numero + 10].img} />
+                <h2 className='textSpace h2'>{PortRoute[numero - 2 ? numero - 2 : numero + 10].h1}</h2>
               </Card>
             </NavLink>
           </SwiperSlide>

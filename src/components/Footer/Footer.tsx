@@ -11,7 +11,7 @@ export const Footer = () => {
       <RowSection>
         <div>
           <article>
-            <img src={logoDark} alt="img" />
+            <img loading="lazy" src={logoDark} alt="img" />
           </article>
           <span><Copyright size={20} weight="bold" />{anoAtual} Todos os direitos reservados</span>
         </div>

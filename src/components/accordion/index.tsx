@@ -12,7 +12,7 @@ function Fac() {
         <Accordion.Item className='acc' eventKey="0">
           <Accordion.Header><span>Como faço pra solicitar um orçamento?</span></Accordion.Header>
           <Accordion.Body className='acc'>
-            Entre em contato conosco através do WhatsApp numero (00) 99999- 9999 ou do e-mail. KarinaKam@gmail.com
+            Entre em contato conosco através do WhatsApp numero (14) 99176 - 1410 ou do e-mail. Kaamoliveira@kaamoliveira.arq.br
           </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item className='acc' eventKey="1">

@@ -13,7 +13,7 @@ interface InterSection1_3{
 export const Section1_3 = ({ btnText, img1, img2, text, title, subTitle, id} : InterSection1_3) => {
   return(
     <StyledSection id={id}>     
-      <img  src={img1} /> 
+      <img loading="lazy" src={img1} /> 
       <div>
         <h3>{subTitle}</h3>
         <h1>          
@@ -24,7 +24,7 @@ export const Section1_3 = ({ btnText, img1, img2, text, title, subTitle, id} : I
         </p>
         <article><NavLink to={"/faleconosco"}>{btnText}</NavLink></article>
       </div>
-      <img  src={img2} />
+      <img loading="lazy" src={img2} />
     </StyledSection>
   )
 }

@@ -1,6 +1,5 @@
 import styled from 'styled-components'
 
-import endSectionBg from "../../assets/endSectionBg.jpg"
 
 export const BodyContent = styled.section`
   display: flex;
@@ -525,10 +524,6 @@ export const EndSection = styled.section`
   justify-content: space-between;
   align-items: flex-end;
 
-  /* background-image: url(${endSectionBg});
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-x: center; */
   background-color: ${(props) => props.theme["rb-cream"]};
   height: 75vh;
   width: 100%;

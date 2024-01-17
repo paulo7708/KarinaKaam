@@ -11,19 +11,19 @@ export function CompPortfolio() {
         <ContainerCard>
           <Card>
             <NavLink to={PortComercial[1].path}>
-              <img className='img1' src={PortComercial[1].img} />
+              <img loading="lazy" className='img1' src={PortComercial[1].img} />
               <h1>{PortComercial[1].h1}</h1>
             </NavLink>
           </Card>
           <Card>
             <NavLink to={PortComercial[3].path}>
-              <img className='img2' src={PortComercial[3].img} />
+              <img loading="lazy" className='img2' src={PortComercial[3].img} />
               <h1>{PortComercial[3].h1}</h1>
             </NavLink>
           </Card>
           <Card className='hiddenMob'>
             <NavLink to={PortResidencial[0].path}>
-              <img className='img3' src={PortResidencial[0].img} />
+              <img loading="lazy" className='img3' src={PortResidencial[0].img} />
               <h1>{PortResidencial[0].h1}</h1>
             </NavLink>
           </Card>

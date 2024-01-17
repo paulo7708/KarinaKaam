@@ -16,6 +16,7 @@ function CarroselBootstrap() {
           className="d-block w-100"
           src={car1}
           alt="First slide"
+          loading="lazy"
         />
         <Carousel.Caption className='desfoque carText'>
 
@@ -38,6 +39,7 @@ function CarroselBootstrap() {
           className="d-block w-100"
           src={car2}
           alt="Second slide"
+          loading="lazy"
         />
 
         <Carousel.Caption className='desfoque carText'>
@@ -58,6 +60,7 @@ function CarroselBootstrap() {
           className="d-block w-100"
           src={car3}
           alt="Third slide"
+          loading="lazy"
         />
 
         <Carousel.Caption className='desfoque carText'>

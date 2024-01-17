@@ -18,7 +18,7 @@ export function Section1_1({ btnText, text, title, subTitle, id, image }: Sectio
   return (
     <VideoSection id={id}>
 
-      <img src={image} alt="" />
+      <img loading="lazy" src={image} alt="" />
       <div className='center'>
         <Slide bottom duration={2000}>
           <h3>{subTitle}</h3>

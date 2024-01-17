@@ -18,7 +18,7 @@ export default function Portfolio() {
             <Card>
 
               <NavLink to={path}>
-                <img src={img} />
+                <img loading="lazy" src={img} />
                 <h1>{h1}</h1>
               </NavLink>
 

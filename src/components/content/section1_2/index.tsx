@@ -35,7 +35,7 @@ export function Section1_2({ btnText, img, text, title, subTitle, id }: Section1
           </article>
         </Slide>
       </div>
-      <img src={img} />
+      <img loading="lazy" src={img} />
     </StyledSection>
 
   );

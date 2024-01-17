@@ -16,7 +16,7 @@ export default function Portfolio(){
             return(
               <Card>
                 <a href={path}>
-                  <img src={img} />
+                  <img loading="lazy" src={img} />
                   <h1>{h1}</h1>
                 </a>
               </Card>

@@ -1,6 +1,6 @@
 import { Card, ContainerCard, PortStyle } from "./style";
-import comImg from '../../assets/Projeto comercial/Glitter shopping botucatu/01.png'
-import resImg from '../../assets/Projeto residencial/RESIDENCIA 01/1.png'
+import comImg from '../../assets/Projeto comercial/Glitter shopping botucatu/01Resultado.png'
+import resImg from '../../assets/Projeto residencial/RESIDENCIA 01/1Resultado.png'
 import { NavLink } from "react-router-dom";
 
 export default function PrePortfolio() {
@@ -15,13 +15,13 @@ export default function PrePortfolio() {
 
         <Card>
           <NavLink to='/PortfolioComercial'>
-            <img src={comImg} />
+            <img loading="lazy" src={comImg} />
             <h1>Projetos Comerciais</h1>
           </NavLink>          
         </Card>
         <Card>
           <NavLink to='/PortfolioResidencial'>
-            <img src={resImg} />
+            <img loading="lazy" src={resImg} />
             <h1>Projetos Residenciais</h1>
           </NavLink>
         </Card>
