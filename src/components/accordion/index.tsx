@@ -1,7 +1,8 @@
 import Accordion from 'react-bootstrap/Accordion';
 import './style.css'
-import { Contato, PortBtn } from './style';
-
+import { Contato } from './style';
+import Nav from 'react-bootstrap/Nav';
+import { HashLink as Link } from 'react-router-hash-link';
 
 function Fac() {
   return (
@@ -38,9 +39,9 @@ function Fac() {
       <Contato>
         <p className='paragrafoFinal'>Caso você tenha alguma dúvida que não foi respondida aqui nessa seção,<br />entre em contato conosco</p>
 
-        <PortBtn href="/faleconosco">
-          <span>Entre em contato</span>
-        </PortBtn>
+        
+            <Nav.Link className='btnPort' to={"/faleconosco"} as={Link}>Fale Conosco</Nav.Link>
+          
       </Contato>
 
 

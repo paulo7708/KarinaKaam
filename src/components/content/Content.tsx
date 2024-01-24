@@ -88,15 +88,7 @@ export const Content = () => {
         <CnavHome />
         <ImgIcon id="fac" />
         <Fac />
-
-
-
-
-
-
-
         <ImgIcon />
-
 
       </BodyContent>
 

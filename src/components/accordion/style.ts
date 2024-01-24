@@ -11,10 +11,9 @@ export const Contato = styled.div`
   p{
     color: #E1E1E6;
   }
-`
 
-export const PortBtn = styled.a`
-    text-decoration: none;
+  .btnPort{
+  text-decoration: none;
     margin-top: 0.5rem;
     font-size: 2rem;
     border: 3px solid ${(props) => props.theme["gray-300"]};
@@ -36,6 +35,6 @@ export const PortBtn = styled.a`
       color:  ${(props) => props.theme['kam-pink']};
       border: 3px solid ${(props) => props.theme["kam-pink"]};
     }
-
-    
+}
 `
+
