@@ -7,7 +7,7 @@ export function CardSvg() {
     <>
       <PortStyle>
 
-        <h3>Contenos sobre suas necessidades!</h3>
+        <h3>Conte-nos sobre suas necessidades!</h3>
         <ContainerCard>
           <Card>
             <NavLink to='/faleconosco'>

@@ -174,8 +174,8 @@ export const FormContainer = styled.section`
     background: transparent;
       transition: all 0.2s ease-in-out;
       @media (max-width: 800px){
-      padding: 0.8rem 2rem;
-
+      padding: 0 2rem;
+      margin: 1rem;
         p{      
         font-size: 1.1rem;      
       };
