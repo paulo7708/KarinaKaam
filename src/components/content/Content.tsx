@@ -16,12 +16,18 @@ import { CompPortfolio } from "../compPortfolio";
 import { Servicos } from "../servicos";
 import { CardSvg } from "../cardSvg";
 import { CnavHome } from "../PrePortfolio/pages/carouselNavigate/CnavHome";
+import SEO from "../SEO";
 
 
 
 export const Content = () => {
   return (
     <>
+      <SEO
+        title='Kaam & Oliveira | Arquitetura e Design de interiores'
+        description='Kaam & Oliveira Arquitetura e Design de Interiores. Construir e reformar, personalizar o seu ambiente, projetos comerciais e residenciais de design de interiores e arquitetura, transformando um simples ambiente em um local confortável'
+        keywords='Kaam-&-Oliveira, Kaam & Oliveira, Kaam&Oliveira, karina, karinakam, karinakaam, karina kaam, carinacam, karinacaam,carinakaam, João Paulo oliveira, kaam, design de interiores, arquitetura,  construir, reformar, projetos-comerciais, projetos-residenciais, ambientes'
+      />
       <CarroselBootstrap />
       <BodyContent>
 
@@ -38,7 +44,7 @@ export const Content = () => {
           strong="Se você se identifica com essas situações abaixo, nós podemos te ajudar:"
         />
         <CompPortfolio />
-        <ImgIcon id="sobre"/>
+        <ImgIcon id="sobre" />
         <ImgIcon className="sobre">
           <h3> Quem somos &nbsp;</h3>
         </ImgIcon>

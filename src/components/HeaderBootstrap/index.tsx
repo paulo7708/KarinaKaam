@@ -68,7 +68,7 @@ export const HeaderBootstrap = () => {
               ><Users className='whatsNav' size={28} color={'#FFF'} weight="fill" />Orçamento
               </Nav.Link>
 
-              <a className='whatsNav' href="https://wa.me/5514991761410" target="_blank"><WhatsappLogo size={33} color="#dab4d1" /></a>
+              <a className='whatsNav' href="https://wa.me/5514981321312" target="_blank"><WhatsappLogo size={33} color="#dab4d1" /></a>
             </Nav>
           </Navbar.Collapse>
         </Container>

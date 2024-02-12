@@ -19,8 +19,8 @@ export const Router = () => {
       <Route path="/" element={<Default />}>
         <Route path="/" element={<Content />} />
         <Route path="/faleconosco" element={<PreForm />} />
-          <Route path="/faleconosco/FormArq" element={<FormArq />} />
-          <Route path="/faleconosco/FormDesign" element={<FormDesign />} />
+        <Route path="/faleconosco/FormArq" element={<FormArq />} />
+        <Route path="/faleconosco/FormDesign" element={<FormDesign />} />
         <Route path="/preportfolio" element={<PrePortfolio />} />
         <Route path="/PortfolioComercial" element={<PortfolioComercial />} />
         <Route path="/PortfolioResidencial" element={<PortfolioResidencial />} />

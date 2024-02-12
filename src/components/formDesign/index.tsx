@@ -31,7 +31,7 @@ export const FormDesign = () => {
     const templateParams = { name, email, phone, message, subject, qntinvestir, outInfo, localizacaoLote, oqespera, profissao, jaexiste, ambientes, pqgostaria, qlestilo, seguimento };
 
     await emailjs.send(
-      "service_68ypfh7", //service ID
+      "service_qf1kwgg", //service ID
       "template_ecat886", //template ID
       templateParams, // templateParams
       "sFf2gEu-ZHb36_Dyi" //Public Key
@@ -76,7 +76,7 @@ export const FormDesign = () => {
         </HeaderForm>
         <form onSubmit={onSubmit}>
 
-          <p>Preencha esse formulário a baixo para podermos te conhecer melhor.</p>
+          <p>Preencha esse formulário para podermos te conhecer melhor.</p>
           <br />
 
           {/* //funcional */}

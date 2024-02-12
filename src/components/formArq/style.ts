@@ -167,6 +167,7 @@ export const FormContainer = styled.section`
     text-align: center;
     height: 4rem;
     margin-top: 0.8rem;
+    margin: 1rem;
     font-size: 2rem;
     cursor: pointer;
     border: 3px solid ${(props) => props.theme["kam-pink"]};
@@ -175,7 +176,6 @@ export const FormContainer = styled.section`
       transition: all 0.2s ease-in-out;
       @media (max-width: 800px){
       padding: 0 2rem;
-      margin: 1rem;
         p{      
         font-size: 1.1rem;      
       };
