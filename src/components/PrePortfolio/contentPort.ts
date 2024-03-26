@@ -1,7 +1,7 @@
 import img1 from '../../assets/Projeto comercial/Clara Ferreira - Bauru Shopping/01Resultado.png'
 import img2 from '../../assets/Projeto comercial/Glitter shopping botucatu/01Resultado.png'
 import img3 from '../../assets/Projeto comercial/Clinica Veterinaria - toca silvestre/07Resultado.png'
-import img4 from '../../assets/Projeto comercial/Filial Komatsu Bauru/01Resultado.png'
+// import img4 from '../../assets/Projeto comercial/Filial Komatsu Bauru/01Resultado.png'
 import img5 from '../../assets/Projeto comercial/Hamburgueria - Bets Itapuí/02Resultado.png'
 import img6 from '../../assets/Projeto comercial/La Casual modas - loja infantil/01Resultado.png'
 import img7 from '../../assets/Projeto comercial/Sala Psicologia/01Resultado.png'
@@ -12,7 +12,7 @@ import img10 from '../../assets/Projeto comercial/Studio Pilates - Fortaleza/01R
 import { ClaraFerreira } from './pages/PortfolioComercial/ClaraFerreira'
 import { GlitterShoppingBotucatu } from './pages/PortfolioComercial/GlitterShoppingBotucatu'
 import { HamburgueriaBetsItapuí } from './pages/PortfolioComercial/HamburgueriaBetsItapuí'
-import { KomatsuBauru } from './pages/PortfolioComercial/KomatsuBauru'
+// import { KomatsuBauru } from './pages/PortfolioComercial/KomatsuBauru'
 import { LaCasualmodas } from './pages/PortfolioComercial/LaCasualmodas'
 import { SalaPsicologia } from './pages/PortfolioComercial/SalaPsicologia'
 import { Salafisioterapia } from './pages/PortfolioComercial/Salafisioterapia'
@@ -62,12 +62,12 @@ export const PortRoute = [
     path: '/TocaSilvestre',
     component: TocaSilvestre
   },
-  {
-    img: img4,
-    h1: 'Komatsu Bauru',
-    path: '/KomatsuBauru',
-    component: KomatsuBauru
-  },
+  // {
+  //   img: img4,
+  //   h1: 'Komatsu Bauru',
+  //   path: '/KomatsuBauru',
+  //   component: KomatsuBauru
+  // },
   {
     img: img5,
     h1: 'Hamburgueria Bets Itapuí',
@@ -186,12 +186,12 @@ export const PortComercial = [
     path: '/TocaSilvestre',
     component: TocaSilvestre
   },
-  {
-    img: img4,
-    h1: 'Komatsu Bauru',
-    path: '/KomatsuBauru',
-    component: KomatsuBauru
-  },
+  // {
+  //   img: img4,
+  //   h1: 'Komatsu Bauru',
+  //   path: '/KomatsuBauru',
+  //   component: KomatsuBauru
+  // },
   {
     img: img5,
     h1: 'Hamburgueria Bets Itapuí',
@@ -268,14 +268,14 @@ export const PortResidencial = [
     path: '/Residencia2',
     component: Residencia2
   },
-  
+
   {
     img: res1,
     h1: 'Residencia 1',
     path: '/Residencia1',
     component: Residencia1
   },
-    {
+  {
     img: res8,
     h1: 'Residencia Praia',
     path: '/ResidenciaPraia',

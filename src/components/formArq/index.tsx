@@ -164,7 +164,7 @@ export const FormArq = () => {
 
           <Div>
             <label className="label" htmlFor="m2Lote">
-              Metro Quadrado (m²):
+              Tamanho (m2):
             </label>
             <input
               name="m2Lote"

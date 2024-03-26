@@ -195,7 +195,7 @@ export const FormDesign = () => {
 
           <Div>
             <LabelChexbox>
-              Já existe ou vai iniciar?
+              Espaço já existente? Ou vai iniciar construção?
             </LabelChexbox>
             <input
               id="jaexiste"
@@ -209,7 +209,7 @@ export const FormDesign = () => {
 
           <Div>
             <LabelChexbox>
-              Seguimento e Publico alvo
+              Se for espaço comercial, qual seu segmento e público alvo?
             </LabelChexbox>
             <input
               id="seguimento"

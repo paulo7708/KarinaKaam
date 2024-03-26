@@ -16,9 +16,9 @@ export function CompPortfolio() {
             </NavLink>
           </Card>
           <Card>
-            <NavLink to={PortComercial[3].path}>
-              <img loading="lazy" className='img2' src={PortComercial[3].img} />
-              <h1>{PortComercial[3].h1}</h1>
+            <NavLink to={PortComercial[0].path}>
+              <img loading="lazy" className='img2' src={PortComercial[0].img} />
+              <h1>{PortComercial[0].h1}</h1>
             </NavLink>
           </Card>
           <Card className='hiddenMob'>

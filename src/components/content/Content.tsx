@@ -35,7 +35,7 @@ export const Content = () => {
         <Servicos
           id="servicos"
           title="SERVIÇOS"
-          h2="QUANDO SOLICIDAR UM ESCRITORIO DE ARQUITETURA?"
+          h2="POR QUE CONTRATAR UM ARQUITETO OU UM DESIGNER DE INTERIORES?"
           p="Construir e reformar pode parecer simples, mas apenas quem já experimentou sabe que não é tão fácil assim. Lidar com fornecedores, adaptar e aprimorar o espaço, gerenciar custos e materiais podem ser desafios estressantes. Nossa missão é simplificar esse processo e tornar seu sonho uma realidade palpável."
           card1="Quer personalizar o seu ambiente, mas está em dúvida por onde começar?"
           card2="Tem dificuldades em supervisionar a construção e os profissionais"

@@ -21,9 +21,7 @@ export const ImgIcon = styled.div`
   @media (max-width: 450px) {    
     margin: 1rem;
   
-  }
-
-  
+  }  
   
 `
 
